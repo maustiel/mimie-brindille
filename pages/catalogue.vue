@@ -41,32 +41,32 @@ const catalogue = [
   {
     name: "Bouquet de roses",
     description: "Un bouquet classique et élégant.",
-    image: "/images/bouquet1.jpg",
+    image: "/images/bouquet1.webp",
   },
   {
     name: "Composition florale",
     description: "Une composition parfaite pour les grandes occasions.",
-    image: "/images/bouquet2.jpg",
+    image: "/images/bouquet2.webp",
   },
   {
     name: "Bouquets personnalisés",
     description: "Des créations uniques selon vos envies.",
-    image: "/images/bouquet3.jpg",
+    image: "/images/bouquet3.webp",
   },
   {
     name: "Plantes d’intérieur & d’extérieur",
     description: "Apportez une touche de nature chez vous.",
-    image: "/images/bouquet4.jpg",
+    image: "/images/bouquet4.webp",
   },
   {
     name: "Décorations florales pour événements",
     description: "Mariages, baptêmes, réceptions…",
-    image: "/images/bouquet5.jpg",
+    image: "/images/bouquet5.webp",
   },
   {
     name: "Compositions funéraires",
     description: "Pour rendre un dernier hommage avec élégance.",
-    image: "/images/bouquet6.jpg",
+    image: "/images/bouquet6.webp",
   },
 ];
 </script>

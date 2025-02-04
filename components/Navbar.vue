@@ -21,7 +21,7 @@
 
       <!-- Logo centré -->
       <div class="flex justify-center col-span-3 md:col-span-1">
-        <img src="/images/logo.png" alt="Logo Mimie Brindille" class="h-[80px]" />
+        <img src="/images/logo.webp" alt="Logo Mimie Brindille" class="h-[80px]" />
       </div>
 
       <!-- Liens de droite -->
@@ -54,7 +54,7 @@
     <!-- Image décorative en dessous de la navbar -->
     <div class="relative">
       <div class="absolute top-[-25px] left-0 w-full h-[65px] bg-cover bg-center bg-no-repeat z-10"
-           style="background-image: url('/images/fleurs-navbar.png');"></div>
+           style="background-image: url('/images/fleurs-navbar.webp');"></div>
     </div>
 
     <!-- Menu coulissant -->

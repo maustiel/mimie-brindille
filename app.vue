@@ -20,7 +20,7 @@ import { useHead } from '#imports'
 
 useHead({
   link: [
-    { rel: 'icon', type: 'image/png', href: '/images/favicon3.png' }
+    { rel: 'icon', type: 'image/png', href: '/images/favicon3.webp' }
   ]
 })
 </script>

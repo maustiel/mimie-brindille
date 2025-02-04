@@ -1,13 +1,13 @@
 <template>
   <div class="relative mt-20"> <!-- Ajout du mt-10 ici -->
     <!-- Image décorative -->
-    <div class="absolute top-[-40px] left-0 w-full h-[65px] bg-cover bg-center bg-no-repeat" style="background-image: url('/images/fleurs-footer.png');"></div>
+    <div class="absolute top-[-40px] left-0 w-full h-[65px] bg-cover bg-center bg-no-repeat" style="background-image: url('/images/fleurs-footer.webp');"></div>
 
     <footer class="bg-[#CB8587] text-white py-8 relative z-10">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
         <!-- Logo -->
         <div class="flex items-center justify-center flex-col">
-          <img src="/images/logo.png" alt="Logo Mimie Brindille" class="h-40 w-40" />
+          <img src="/images/logo.webp" alt="Logo Mimie Brindille" class="h-40 w-40" />
         </div>
 
         <!-- Navigation -->

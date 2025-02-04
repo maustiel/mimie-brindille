@@ -13,9 +13,9 @@
 
     <!-- Section des images -->
     <div class="flex justify-center gap-6 mt-6">
-      <img src="/images/mimie.JPG" alt="Boutique Mimie Brindille" class="rounded-xl shadow-lg w-64" />
-      <img src="/images/mimie2.JPG" alt="Boutique Mimie Brindille" class="rounded-xl shadow-lg w-64" />
-      <img src="/images/mimie3.JPG" alt="Boutique Mimie Brindille" class="rounded-xl shadow-lg w-64" />
+      <img src="/images/mimie.webp" alt="Boutique Mimie Brindille" class="rounded-xl shadow-lg w-64" />
+      <img src="/images/mimie2.webp" alt="Boutique Mimie Brindille" class="rounded-xl shadow-lg w-64" />
+      <img src="/images/mimie3.webp" alt="Boutique Mimie Brindille" class="rounded-xl shadow-lg w-64" />
     </div>
 
     <p class="text-lg mt-6">

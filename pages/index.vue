@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <div 
       class="relative min-h-screen flex flex-col items-center justify-center text-center bg-cover bg-center" 
-      style="background-image: url('/images/accueil.jpg');"
+      style="background-image: url('/images/accueil.webp');"
     >
       <!-- Couche semi-transparente -->
       <div class="absolute inset-0 bg-black/50"></div>
@@ -48,9 +48,9 @@
     <div class="py-12 bg-white text-center">
       <h2 class="text-3xl font-bold text-[#CB8587] mb-6">Découvrez nos réalisations</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-        <img src="/public/images/bouquet1.jpg" alt="Bouquet 1" class="rounded-lg shadow-md hover:scale-105 transition">
-        <img src="/public/images/bouquet2.jpg" alt="Bouquet 2" class="rounded-lg shadow-md hover:scale-105 transition">
-        <img src="/public/images/bouquet3.jpg" alt="Bouquet 3" class="rounded-lg shadow-md hover:scale-105 transition">
+        <img src="/public/images/bouquet1.webp" alt="Bouquet 1" loading="lazy" class="rounded-lg shadow-md hover:scale-105 transition">
+        <img src="/public/images/bouquet2.webp" alt="Bouquet 2" loading="lazy"class="rounded-lg shadow-md hover:scale-105 transition">
+        <img src="/public/images/bouquet3.webp" alt="Bouquet 3" loading="lazy"class="rounded-lg shadow-md hover:scale-105 transition">
       </div>
     </div>
   </div>
