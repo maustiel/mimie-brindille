@@ -26,8 +26,12 @@
           <h3 class="text-lg font-semibold">Contact</h3>
           <ul class="mt-4 space-y-2">
             <li class="text-sm font-semibold">Pl. de Liberchies 15, 6238 Pont-à-Celles, Belgique</li>
-            <li class="text-sm font-semibold">0492 39 55 90</li>
-            <li class="text-sm font-semibold">Mimie.Brindille@hotmail.com</li>
+            <li class="text-sm font-semibold">
+              <a href="tel:+32492395590" class="hover:underline">0492 39 55 90</a>
+            </li>
+            <li class="text-sm font-semibold">
+              <a href="mailto:Mimie.Brindille@hotmail.com" class="hover:underline">Mimie.Brindille@hotmail.com</a>
+            </li>
           </ul>
         </div>
 
