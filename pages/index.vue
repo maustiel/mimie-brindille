@@ -10,8 +10,8 @@
 
       <!-- Contenu principal -->
       <div class="relative z-10">
-        <h1 class="text-5xl font-bold text-white drop-shadow-md">Bienvenue chez Mimie Brindille</h1>
-        <p class="mt-4 text-xl text-white drop-shadow-md">Votre artisan fleuriste à Pont-à-Celles.</p>
+        <h1 class="helium text-5xl text-white drop-shadow-md">Bienvenue chez Mimie Brindille</h1>
+        <p class=" louis mt-4 text-xl text-white drop-shadow-md">Votre artisan fleuriste à Pont-à-Celles.</p>
         
         <!-- Section de Call to Action -->
         <div class="mt-8 flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 justify-center">
