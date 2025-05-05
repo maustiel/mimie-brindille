@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tes overrides ou variables CSS ici, par exemple : */
+:root {
+    --color-primary: #e89ca1;
+}
+/* Mode contraste élevé */
+.high-contrast {
+    filter: contrast(150%) brightness(90%);
+}
+
+/* Désactivation des animations/transitions */
+.no-animations *,
+.no-animations *::before,
+.no-animations *::after {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+}
+
+
+
+/* On remonte au-dessus du reste */
+.accessibility-controls {
+    z-index: 1000;
+}

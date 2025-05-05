@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <!-- Navbar -->
-    <nav class=" louis bg-[#CB8587] text-white p-2 grid grid-cols-5 items-center relative z-20">
+    <nav class=" louis bg-[#CB8587]  text-white p-2 grid grid-cols-5 items-center relative z-20">
       <!-- Liens de gauche -->
       <NuxtLink to="/" 
         class="text-center hidden md:block px-3 py-2 rounded transition-all duration-300"

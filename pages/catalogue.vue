@@ -2,19 +2,23 @@
   <div class="container mx-auto py-10">
     <h1 class="text-3xl font-bold text-[#CB8587] mb-5">Produits et Services</h1>
     <p class="text-lg mb-5">
-      Chez Mimie Brindille, nous vous proposons une large gamme de créations florales pour chaque occasion. Que ce soit pour un mariage, un anniversaire, un événement spécial, ou simplement pour faire plaisir, nos compositions sont réalisées avec passion et fraîcheur.
+      Chez Mimie Brindille, nous vous proposons une large gamme de créations
+      florales pour chaque occasion. Que ce soit pour un mariage, un
+      anniversaire, un événement spécial, ou simplement pour faire plaisir, nos
+      compositions sont réalisées avec passion et fraîcheur.
     </p>
-<br>
+    <br />
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div
         v-for="(item, index) in catalogue"
         :key="index"
-        class="bg-white shadow-lg rounded-xl p-4 hover:shadow-xl transition-transform transform hover:scale-105"
+        class="bg-white shadow-lg rounded-xl p-4 hover:shadow-xl transition-transform transform hover:scale-105 cursor-pointer"
+        @click="openGallery(item)"
       >
-        <img 
-          :src="item.image" 
-          :alt="item.name" 
-          class="rounded-xl mb-4 w-full h-96 object-cover"  
+        <img
+          :src="item.image"
+          :alt="item.name"
+          class="rounded-xl mb-4 w-full h-96 object-cover"
         />
         <h2 class="text-lg font-semibold">{{ item.name }}</h2>
         <p class="text-sm text-[#CB8587]">{{ item.description }}</p>
@@ -24,49 +28,129 @@
     <!-- Texte et bouton en bas de la page -->
     <div class="mt-10 text-center">
       <p class="text-lg font-semibold text-[#CB8587]">
-        Venez découvrir nos réalisations en boutique ou contactez-nous pour une demande personnalisée ! 🌼
+        Venez découvrir nos réalisations en boutique ou contactez-nous pour une
+        demande personnalisée ! 🌼
       </p>
-      <NuxtLink 
+      <NuxtLink
         to="/contact"
         class="mt-4 inline-block bg-[#CB8587] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#b46b6d] transition duration-300"
       >
         Contactez-nous
       </NuxtLink>
     </div>
+
+    <!-- Modal galerie -->
+    <div
+      v-if="gallery.visible"
+      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 overflow-auto"
+    >
+      <div class="bg-white rounded-lg shadow-xl max-w-5xl w-full p-6 relative">
+        <!-- Bouton fermer -->
+        <button
+          @click="gallery.visible = false"
+          class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-2xl leading-none"
+          aria-label="Fermer la galerie"
+        >
+          &times;
+        </button>
+        <!-- Grid des images -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <img
+            v-for="(src, idx) in gallery.images"
+            :key="idx"
+            :src="src"
+            class="rounded-md object-cover w-full h-48"
+            :alt="`Image ${idx + 1}`"
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
+import { ref } from "vue";
+
+// 1) Le catalogue enrichi d'un tableau gallery
 const catalogue = [
   {
     name: "Bouquet de roses",
     description: "Un bouquet classique et élégant.",
     image: "/images/bouquet1.webp",
+    gallery: [
+      "/images/bouquet1.webp",
+      "/images/bouquet2.webp",
+      "/images/bouquet3.webp",
+      "/images/bouquet4.webp",
+      "/images/bouquet5.webp",
+      "/images/bouquet6.webp",
+    ],
   },
   {
     name: "Composition florale",
     description: "Une composition parfaite pour les grandes occasions.",
     image: "/images/bouquet2.webp",
+    gallery: [
+      "/images/bouquet2.webp",
+      "/images/bouquet2-2.webp",
+      "/images/bouquet2-3.webp",
+    ],
   },
   {
     name: "Bouquets personnalisés",
     description: "Des créations uniques selon vos envies.",
     image: "/images/bouquet3.webp",
+    gallery: [
+      "/images/bouquet3.webp",
+      "/images/bouquet3-2.webp",
+      "/images/bouquet3-3.webp",
+    ],
   },
   {
     name: "Plantes d’intérieur & d’extérieur",
     description: "Apportez une touche de nature chez vous.",
     image: "/images/bouquet4.webp",
+    gallery: [
+      "/images/bouquet4.webp",
+      "/images/bouquet4-2.webp",
+      "/images/bouquet4-3.webp",
+    ],
   },
   {
     name: "Décorations florales pour événements",
     description: "Mariages, baptêmes, réceptions…",
     image: "/images/bouquet5.webp",
+    gallery: [
+      "/images/bouquet5.webp",
+      "/images/bouquet5-2.webp",
+      "/images/bouquet5-3.webp",
+    ],
   },
   {
     name: "Compositions funéraires",
     description: "Pour rendre un dernier hommage avec élégance.",
     image: "/images/bouquet6.webp",
+    gallery: [
+      "/images/bouquet6.webp",
+      "/images/bouquet6-2.webp",
+      "/images/bouquet6-3.webp",
+    ],
   },
 ];
+
+// 2) État de la modal galerie
+const gallery = ref({
+  visible: false,
+  images: [],
+});
+
+// 3) Ouvre la modal avec toutes les images de l'item
+function openGallery(item) {
+  gallery.value.images = item.gallery;
+  gallery.value.visible = true;
+}
 </script>
+
+<style scoped>
+/* Aucun style supplémentaire nécessaire */
+</style>
