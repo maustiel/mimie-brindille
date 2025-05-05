@@ -19,10 +19,10 @@
         <span :class="{ 'text-lg': hover === '/catalogue' }">Produits et Services</span>
       </NuxtLink>
 
-      <!-- Logo centré -->
-      <div class="flex justify-center col-span-3 md:col-span-1">
-        <img src="/images/logo.webp" alt="Logo Mimie Brindille" class="h-[80px]" />
-      </div>
+     <!-- Logo centré -->
+<NuxtLink to="/" class="flex justify-center col-span-3 md:col-span-1">
+  <img src="/images/logo.webp" alt="Logo Mimie Brindille" class="h-[80px]" />
+</NuxtLink>
 
       <!-- Liens de droite -->
       <NuxtLink to="/about" 

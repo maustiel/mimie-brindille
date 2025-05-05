@@ -27,7 +27,7 @@
           {{ store.highContrast ? 'Contraste normal' : 'Contraste élevé' }}
         </button>
         <button @click="toggleAnimations" class="px-3 py-1 border rounded">
-          {{ store.animationsEnabled ? 'Réactiver anim.' : 'Désactiver anim.' }}
+          {{ store.animationsEnabled ? 'Désactiver anim.' : 'Réactiver anim.' }}
         </button>
       </div>
     </transition>
