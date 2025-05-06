@@ -1,25 +1,25 @@
 <template>
   <div>
-    <!-- Bouton rond fixe en bas à droite -->
+    <!-- Bouton rond fixe en bas à gauche -->
     <button
       @click="open = !open"
-      class="fixed bottom-4 right-4 w-12 h-12 rounded-full bg-[#381D1C] flex items-center justify-center shadow-lg z-[1000]"
+      class="fixed bottom-4 left-4 w-12 h-12 rounded-full bg-[#381D1C] flex items-center justify-center shadow-lg z-10"
+
       :aria-expanded="open"
       aria-label="Options d’accessibilité"
     >
-  <img 
-  src="/icons/settings.svg" 
-  alt="Icone réglages" 
-  class="w-6 h-6" 
-/>
-
+      <img 
+        src="/icons/settings.svg" 
+        alt="Icone réglages" 
+        class="w-6 h-6" 
+      />
     </button>
 
     <!-- Panneau d’options -->
     <transition name="fade">
       <div
         v-if="open"
-        class="fixed bottom-20 right-4 flex flex-col gap-2 bg-white p-3 rounded-xl shadow-lg z-[1000]"
+        class="fixed bottom-20 left-4 flex flex-col gap-2 bg-white p-3 rounded-xl shadow-lg z-[1000]"
       >
         <button @click="decrease" class="px-3 py-1 border rounded">A−</button>
         <button @click="increase" class="px-3 py-1 border rounded">A+</button>

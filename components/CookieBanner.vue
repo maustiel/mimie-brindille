@@ -1,7 +1,7 @@
 <template>
   <!-- on n'affiche que si status===null -->
   <div v-if="status === null" class="cookie-banner">
-    <p>Ce site utilise des cookies pour améliorer votre expérience. Acceptez-vous ?</p>
+    <p>🍪 Ce site utilise des cookies pour améliorer votre expérience. Acceptez-vous ?</p>
     <div class="actions">
       <button class="btn-accept" @click="accept">J’accepte</button>
       <button class="btn-refuse" @click="refuse">Je refuse</button>
