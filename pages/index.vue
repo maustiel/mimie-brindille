@@ -104,93 +104,67 @@
     </div>
   </section>
 
-  <!-- SYMBOLIQUE DES FLEURS -->
-  <section
-    class="relative py-12 bg-white text-center px-4 sm:px-6 overflow-hidden"
-  >
-    <!-- Fond transparent -->
-    <div
-      class="absolute inset-0 bg-cover bg-center opacity-20"
-      style="background-image: url('/images/fonds/fond6.jpg ')"
-    ></div>
+ <!-- SYMBOLIQUE DES FLEURS (responsive amélioré) -->
+<section class="relative py-12 bg-white text-center overflow-hidden">
+  <!-- Fond transparent -->
+  <div
+    class="absolute inset-0 bg-cover bg-center opacity-20"
+    style="background-image: url('/images/fonds/fond6.jpg')"
+  ></div>
 
-    <div class="relative max-w-4xl mx-auto">
-      <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
-        La symbolique des fleurs
-      </h2>
+  <div class="relative w-full mx-auto px-2 sm:px-4 lg:px-6">
+    <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
+      La symbolique des fleurs
+    </h2>
 
-      <div class="relative overflow-hidden">
-        <!-- Slides -->
+    <div class="relative overflow-hidden -mx-2 sm:-mx-4">
+      <!-- Slides -->
+      <div
+        class="flex transition-transform duration-500 ease-in-out"
+        :style="{ transform: `translateX(-${currentSymbolIndex * 100}%)` }"
+      >
         <div
-          class="flex transition-transform duration-500 ease-in-out"
-          :style="{ transform: `translateX(-${currentSymbolIndex * 100}%)` }"
+          v-for="(fleur, idx) in symbolique"
+          :key="idx"
+          class="w-full flex-shrink-0 px-2 sm:px-4"
         >
-          <div
-            v-for="(fleur, idx) in symbolique"
-            :key="idx"
-            class="min-w-full flex-shrink-0 px-4"
-          >
-            <img
-              :src="fleur.image"
-              :alt="fleur.name"
-              class="mx-auto w-32 h-32 object-cover rounded-full mb-4 shadow-lg"
-            />
-            <h3 class="text-xl font-semibold text-[#CB8587] mb-2">
-              {{ fleur.name }}
-            </h3>
-            <p class="louis text-gray-700 mb-1">{{ fleur.meaning }}</p>
-            <p class="louis text-gray-500 italic text-sm">
-              {{ fleur.context }}
-            </p>
-          </div>
+          <img
+            :src="fleur.image"
+            :alt="fleur.name"
+            class="mx-auto w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mb-4 shadow-lg"
+          />
+          <h3 class="text-xl font-semibold text-[#CB8587] mb-2">
+            {{ fleur.name }}
+          </h3>
+          <p class="louis text-gray-700 mb-1">{{ fleur.meaning }}</p>
+          <p class="louis text-gray-500 italic text-sm">{{ fleur.context }}</p>
         </div>
-
-        <!-- Flèche gauche -->
-        <button
-          @click="prevSymbol"
-          class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
-          aria-label="Précédent"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 text-[#CB8587]"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
-        </button>
-
-        <!-- Flèche droite -->
-        <button
-          @click="nextSymbol"
-          class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
-          aria-label="Suivant"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 text-[#CB8587]"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
-        </button>
       </div>
+
+      <!-- Flèche gauche -->
+      <button
+        @click="prevSymbol"
+        class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
+        aria-label="Précédent"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#CB8587]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- Flèche droite -->
+      <button
+        @click="nextSymbol"
+        class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
+        aria-label="Suivant"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#CB8587]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
     </div>
-  </section>
+  </div>
+</section>
   <!-- AVIS GOOGLE -->
   <section class="py-12 bg-[#CB8587] px-4 sm:px-6 relative overflow-hidden">
     <!-- (facultatif) un léger motif de fond si tu veux -->
@@ -354,8 +328,7 @@
             Bouquet anti-gaspi tous les lundis
           </h3>
           <p class="mt-2 text-sm sm:text-base text-gray-600">
-            Profitez chaque lundi d’un bouquet composé des fins de stock à prix
-            tout doux.
+            Profitez chaque lundi d’un bouquet composé des fins de stock à -30%.
           </p>
         </div>
 

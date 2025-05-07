@@ -44,8 +44,8 @@
       </NuxtLink>
 
       <!-- Icône du menu burger -->
-      <button @click="toggleMenu" class="md:hidden absolute right-4 top-3 z-30">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <button @click="toggleMenu" class="md:hidden absolute right-6 top-8 z-30">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="12" x2="21" y2="12" />
           <line x1="3" y1="6" x2="21" y2="6" />
           <line x1="3" y1="18" x2="21" y2="18" />
@@ -76,10 +76,10 @@
       <!-- Bouton fermer -->
       <button
         @click="toggleMenu"
-        class="absolute top-4 right-4 text-white hover:text-white focus:outline-none"
+        class="absolute top-8 right-6 text-white hover:text-white focus:outline-none"
         aria-label="Fermer le menu"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>

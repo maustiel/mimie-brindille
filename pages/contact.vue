@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- Bannière Contact -->
-    <div class="container mx-auto py-10 px-4">
+      <div class="container mx-auto pt-14 pb-4 px-0">
       <!-- Hero avec image de fond et overlay -->
-      <div class="relative w-full h-64 mb-2 rounded-lg overflow-hidden">
+      <div class="relative w-full h-64 mb-0 rounded-lg overflow-hidden">
         <img
           src="/images/accueil.webp"
           alt="Contactez-nous"
