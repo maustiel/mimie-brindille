@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto py-10">
+   <div class="container mx-auto pt-16 pb-10">
     <h1 class="text-3xl font-bold text-[#CB8587] mb-5">Produits et Services</h1>
     <p class="text-lg mb-5">
       Chez Mimie Brindille, nous vous proposons une large gamme de créations

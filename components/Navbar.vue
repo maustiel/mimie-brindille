@@ -3,14 +3,16 @@
     <!-- Navbar -->
     <nav class="louis bg-[#CB8587] text-white p-2 grid grid-cols-5 items-center relative z-20">
       <!-- Liens de gauche -->
-      <NuxtLink to="/" 
+      <NuxtLink
+        to="/"
         class="text-center hidden md:block px-3 py-2 rounded transition-all duration-300"
         :class="{ 'bg-[#e09698] px-4 py-3': route.path === '/' }"
         @mouseover="hover = '/'" @mouseleave="hover = null"
       >
         <span :class="{ 'text-lg': hover === '/' }">Accueil</span>
       </NuxtLink>
-      <NuxtLink to="/catalogue" 
+      <NuxtLink
+        to="/catalogue"
         class="text-center hidden md:block px-3 py-2 rounded transition-all duration-300"
         :class="{ 'bg-[#e09698] px-4 py-3': route.path === '/catalogue' }"
         @mouseover="hover = '/catalogue'" @mouseleave="hover = null"
@@ -24,14 +26,16 @@
       </NuxtLink>
 
       <!-- Liens de droite -->
-      <NuxtLink to="/about" 
+      <NuxtLink
+        to="/about"
         class="text-center hidden md:block px-3 py-2 rounded transition-all duration-300"
         :class="{ 'bg-[#e09698] px-4 py-3': route.path === '/about' }"
         @mouseover="hover = '/about'" @mouseleave="hover = null"
       >
         <span :class="{ 'text-lg': hover === '/about' }">À propos</span>
       </NuxtLink>
-      <NuxtLink to="/contact" 
+      <NuxtLink
+        to="/contact"
         class="text-center hidden md:block px-3 py-2 rounded transition-all duration-300"
         :class="{ 'bg-[#e09698] px-4 py-3': route.path === '/contact' }"
         @mouseover="hover = '/contact'" @mouseleave="hover = null"
@@ -57,17 +61,17 @@
       ></div>
     </div>
 
-    <!-- Overlay semi-transparent -->
+    <!-- Overlay -->
     <div
-      class="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300"
       v-if="menuOpen"
       @click="toggleMenu"
+      class="fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300"
     ></div>
 
     <!-- Drawer -->
     <div
-      class="fixed top-0 right-0 w-64 h-full bg-[#CB8587] shadow-lg z-50 transform transition-transform duration-300 flex flex-col"
       :class="menuOpen ? 'translate-x-0' : 'translate-x-full'"
+      class="fixed top-0 right-0 w-64 h-full bg-[#CB8587] shadow-lg z-50 transform transition-transform duration-300 flex flex-col"
     >
       <!-- Bouton fermer -->
       <button
@@ -83,22 +87,42 @@
       <!-- Liens de navigation -->
       <ul class="mt-16 text-white text-lg space-y-4 p-6">
         <li>
-          <NuxtLink to="/" class="block px-4 py-3 rounded-lg transition-all duration-300 hover:bg-[#e09698]" @click="toggleMenu">
+          <NuxtLink
+            to="/"
+            @click="toggleMenu"
+            class="block px-4 py-3 rounded-lg transition-all duration-300 hover:bg-[#e09698]"
+            :class="{ 'bg-[#e09698]': route.path === '/' }"
+          >
             Accueil
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/catalogue" class="block px-4 py-3 rounded-lg transition-all duration-300 hover:bg-[#e09698]" @click="toggleMenu">
+          <NuxtLink
+            to="/catalogue"
+            @click="toggleMenu"
+            class="block px-4 py-3 rounded-lg transition-all duration-300 hover:bg-[#e09698]"
+            :class="{ 'bg-[#e09698]': route.path === '/catalogue' }"
+          >
             Produits et Services
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/about" class="block px-4 py-3 rounded-lg transition-all duration-300 hover:bg-[#e09698]" @click="toggleMenu">
+          <NuxtLink
+            to="/about"
+            @click="toggleMenu"
+            class="block px-4 py-3 rounded-lg transition-all duration-300 hover:bg-[#e09698]"
+            :class="{ 'bg-[#e09698]': route.path === '/about' }"
+          >
             À propos
           </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/contact" class="block px-4 py-3 rounded-lg transition-all duration-300 hover:bg-[#e09698]" @click="toggleMenu">
+          <NuxtLink
+            to="/contact"
+            @click="toggleMenu"
+            class="block px-4 py-3 rounded-lg transition-all duration-300 hover:bg-[#e09698]"
+            :class="{ 'bg-[#e09698]': route.path === '/contact' }"
+          >
             Contact
           </NuxtLink>
         </li>

@@ -12,10 +12,14 @@
         <div
           class="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black bg-opacity-40"
         >
-          <h1 class="helium text-5xl text-white drop-shadow-md">
+          <h1
+            class="helium text-3xl sm:text-4xl md:text-5xl text-white drop-shadow-md text-center px-4"
+          >
             Contactez-nous
           </h1>
-          <p class="louis mt-4 text-xl text-white drop-shadow-md">
+          <p
+            class="louis mt-2 sm:mt-4 text-base sm:text-lg md:text-xl text-white drop-shadow-md text-center px-6"
+          >
             N’hésitez pas à nous contacter par téléphone, par e-mail ou via le
             formulaire ci-dessous.
           </p>
@@ -172,7 +176,7 @@
               >
               <textarea
                 id="message"
-                 name="message" 
+                name="message"
                 rows="4"
                 class="block w-full mt-1 p-2 rounded-lg border-gray-300 shadow-sm focus:ring-[#CB8587] focus:border-[#CB8587] h-full"
                 placeholder="Votre message…"
