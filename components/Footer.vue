@@ -2,8 +2,7 @@
   <div class="relative mt-20">
     <!-- Image décorative -->
     <div class="relative overflow-visible"></div>
-    <div
-      class="absolute top-[-40px] left-0 w-full h-[65px] bg-cover bg-center bg-no-repeat"
+     <div class="absolute top-[-60px] left-0 w-full h-[95px] bg-cover bg-center bg-no-repeat"
       style="background-image: url('/images/fleurs-footer.webp')"
     ></div>
 

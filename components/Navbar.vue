@@ -56,7 +56,7 @@
     <!-- Image décorative -->
    <div class="relative overflow-visible"><!-- autorise l’overflow vertical -->
       <div
-        class="absolute top-[-25px] left-0 w-full h-[65px] bg-cover bg-center bg-no-repeat z-10"
+        class="absolute top-[-40px] left-0 w-full h-[95px] bg-cover bg-center bg-no-repeat z-10"
         style="background-image: url('/images/fleurs-navbar.webp');"
       ></div>
     </div>
