@@ -1,16 +1,23 @@
 <template>
   <div class="relative mt-20">
     <!-- Image décorative -->
+    <div class="relative overflow-visible"></div>
     <div
       class="absolute top-[-40px] left-0 w-full h-[65px] bg-cover bg-center bg-no-repeat"
-      style="background-image: url('/images/fleurs-footer.webp');"
+      style="background-image: url('/images/fleurs-footer.webp')"
     ></div>
 
     <footer class="bg-[#CB8587] text-white py-8 relative z-10">
-      <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left"
+      >
         <!-- Logo -->
         <div class="flex items-center justify-center flex-col">
-          <img src="/images/logo.webp" alt="Logo Mimie Brindille" class="h-40 w-40" />
+          <img
+            src="/images/logo.webp"
+            alt="Logo Mimie Brindille"
+            class="h-40 w-40"
+          />
         </div>
 
         <!-- Navigation -->
@@ -18,14 +25,22 @@
           <h3 class="text-lg font-semibold">Menu</h3>
           <ul class="mt-4 space-y-2">
             <li><NuxtLink to="/" class="hover:underline">Accueil</NuxtLink></li>
-            <li><NuxtLink to="/catalogue" class="hover:underline">Produits et Services</NuxtLink></li>
-            <li><NuxtLink to="/about" class="hover:underline">À propos</NuxtLink></li>
-            <li><NuxtLink to="/contact" class="hover:underline">Contact</NuxtLink></li>
+            <li>
+              <NuxtLink to="/catalogue" class="hover:underline"
+                >Produits et Services</NuxtLink
+              >
+            </li>
+            <li>
+              <NuxtLink to="/about" class="hover:underline">À propos</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/contact" class="hover:underline">Contact</NuxtLink>
+            </li>
           </ul>
         </div>
 
         <!-- barre en mobile uniquement -->
-       <hr class="block md:hidden border-t border-white my-4 w-16 mx-auto" />
+        <hr class="block md:hidden border-t border-white my-4 w-16 mx-auto" />
 
         <!-- Contact -->
         <div class="flex flex-col items-center md:items-start">
@@ -35,10 +50,15 @@
               Pl. de Liberchies 15, 6238 Pont-à-Celles, Belgique
             </li>
             <li class="text-sm font-semibold">
-              <a href="tel:+32492395590" class="hover:underline">0492 39 55 90</a>
+              <a href="tel:+32492395590" class="hover:underline"
+                >0492 39 55 90</a
+              >
             </li>
             <li class="text-sm font-semibold">
-              <a href="mailto:Mimie.Brindille@hotmail.com" class="hover:underline">
+              <a
+                href="mailto:Mimie.Brindille@hotmail.com"
+                class="hover:underline"
+              >
                 Mimie.Brindille@hotmail.com
               </a>
             </li>
@@ -69,7 +89,11 @@
           target="_blank"
           class="text-white hover:text-[#EFDFDF]"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="w-6 h-6 fill-current">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 320 512"
+            class="w-6 h-6 fill-current"
+          >
             <path
               d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37
               1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
@@ -83,7 +107,11 @@
           target="_blank"
           class="text-white hover:text-[#EFDFDF]"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6 w-6 fill-current">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="h-6 w-6 fill-current"
+          >
             <path
               d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9
               114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1
