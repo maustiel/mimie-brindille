@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto py-10 px-4">
     <!-- Hero -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 bg-[#FDF0F2] rounded-lg overflow-hidden mb-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 rounded-lg overflow-hidden mb-12">
       <div class="p-8 flex flex-col justify-center">
         <h1 class="text-4xl font-bold text-[#CB8587] mb-4">À propos de Mimie Brindille</h1>
         <p class="text-lg mb-4">
