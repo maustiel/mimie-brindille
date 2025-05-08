@@ -14,13 +14,15 @@
         >
           <h1
             class="helium text-3xl sm:text-4xl md:text-5xl text-white drop-shadow-md text-center px-4"
+            style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"
           >
-            Contactez-nous
+            Contactez-moi
           </h1>
           <p
             class="louis mt-2 sm:mt-4 text-base sm:text-lg md:text-xl text-white drop-shadow-md text-center px-6"
+            style="text-shadow: 2px 2px 4px rgba(0,0,0,1);"
           >
-            N’hésitez pas à nous contacter par téléphone, par e-mail ou via le
+            N’hésitez pas à me contacter par téléphone, par e-mail ou via le
             formulaire ci-dessous.
           </p>
         </div>
@@ -112,7 +114,7 @@
         <!-- Droite : Formulaire de contact -->
         <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col h-full">
           <h2 class="text-3xl font-bold text-[#CB8587] mb-12 text-center">
-            Envoyez-nous un message
+            Envoyez-moi un message
           </h2>
           <form
             action="https://formspree.io/f/xnnddwvq"
