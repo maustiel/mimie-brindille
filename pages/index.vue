@@ -199,13 +199,13 @@
 </section>
   <!-- AVIS GOOGLE -->
   <section class="py-12 bg-[#CB8587] px-4 sm:px-6 relative overflow-hidden">
-    <!-- (facultatif) un léger motif de fond si tu veux -->
+    <!-- un léger motif de fond  
   <img
   src="/images/fonds/petales.webp"
   loading="lazy"
   alt=""
   class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
-/>
+/>-->
 
     <div class="relative container mx-auto">
       <h2
