@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 py-8">
+  <div class="container mx-auto px-4 py-12">
     <h1 class="text-2xl font-semibold text-center mb-6">Mentions Légales</h1>
 
     <section class="mb-8">

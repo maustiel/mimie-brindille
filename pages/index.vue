@@ -10,14 +10,16 @@
         class="relative z-10 container mx-auto h-full flex flex-col justify-center items-center text-center px-4"
       >
         <h1
-          class="helium text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight"
-        >
+    class="helium text-4xl sm:text-5xl md:text-6xl text-white leading-snug"
+    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"
+  >
           Bienvenue chez Mimie Brindille
         </h1>
         <p
-          class="louis mt-4 text-base sm:text-lg md:text-xl text-white max-w-lg"
-        >
-          Votre artisan fleuriste à Pont-à-Celles.
+    class="louis mt-4 text-lg sm:text-xl md:text-2xl text-white max-w-md mx-auto"
+    style="text-shadow: 2px 2px 4px rgba(0,0,0,1);"
+  >
+          Votre fleuriste à Pont-à-Celles.
         </p>
         <NuxtLink
           to="/catalogue"
@@ -42,7 +44,7 @@
         ></div>
         <!-- photo -->
         <img
-          src="/images/mimie.webp"
+          src="/images/autres/mimie8.webp"
           alt="Mimie Brindille"
           class="relative z-10 rounded-lg shadow-lg w-full h-80 object-cover"
         />
@@ -76,40 +78,70 @@
   </section>
 
   <!-- GALERIE -->
-  <section class="py-12 px-4 sm:px-6">
-    <div class="container mx-auto text-center">
-      <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
-        Découvrez nos réalisations
-      </h2>
-      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+<section class="py-12 px-4 sm:px-6">
+  <div class="container mx-auto text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
+      Découvrez nos réalisations
+    </h2>
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <NuxtLink to="/catalogue" key="compo37">
         <img
-          src="/images/bouquet1.webp"
+          src="/images/catalogue/compo/compo37.webp"
           alt="Bouquet 1"
           loading="lazy"
           class="rounded-lg shadow-md hover:scale-105 transition"
         />
+      </NuxtLink>
+      <NuxtLink to="/catalogue" key="compo17">
         <img
-          src="/images/bouquet2.webp"
+          src="/images/catalogue/compo/compo17.webp"
           alt="Bouquet 2"
           loading="lazy"
           class="rounded-lg shadow-md hover:scale-105 transition"
         />
+      </NuxtLink>
+      <NuxtLink to="/catalogue" key="compo18">
         <img
-          src="/images/bouquet3.webp"
+          src="/images/catalogue/compo/compo18.webp"
           alt="Bouquet 3"
           loading="lazy"
           class="rounded-lg shadow-md hover:scale-105 transition"
         />
-      </div>
+      </NuxtLink>
+      <NuxtLink to="/catalogue" key="bouquet1">
+        <img
+          src="/images/catalogue/bouquet/bouquet1.webp"
+          alt="Bouquet 4"
+          loading="lazy"
+          class="rounded-lg shadow-md hover:scale-105 transition"
+        />
+      </NuxtLink>
+      <NuxtLink to="/catalogue" key="bouquet2">
+        <img
+          src="/images/catalogue/bouquet/bouquet2.webp"
+          alt="Bouquet 5"
+          loading="lazy"
+          class="rounded-lg shadow-md hover:scale-105 transition"
+        />
+      </NuxtLink>
+      <NuxtLink to="/catalogue" key="bouquet12">
+        <img
+          src="/images/catalogue/bouquet/bouquet12.webp"
+          alt="Bouquet 6"
+          loading="lazy"
+          class="rounded-lg shadow-md hover:scale-105 transition"
+        />
+      </NuxtLink>
     </div>
-  </section>
+  </div>
+</section>
 
  <!-- SYMBOLIQUE DES FLEURS (responsive amélioré) -->
 <section class="relative py-12 bg-white text-center overflow-hidden">
   <!-- Fond transparent -->
   <div
     class="absolute inset-0 bg-cover bg-center opacity-20"
-    style="background-image: url('/images/fonds/fond6.jpg')"
+    style="background-image: url('/images/fonds/fond6.webp')"
   ></div>
 
   <div class="relative w-full mx-auto px-2 sm:px-4 lg:px-6">
@@ -144,10 +176,10 @@
       <!-- Flèche gauche -->
       <button
         @click="prevSymbol"
-        class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
+        class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-[#CB8587] bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
         aria-label="Précédent"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#CB8587]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
       </button>
@@ -155,10 +187,10 @@
       <!-- Flèche droite -->
       <button
         @click="nextSymbol"
-        class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
+        class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-[#CB8587] bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
         aria-label="Suivant"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#CB8587]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
         </svg>
       </button>
@@ -168,10 +200,12 @@
   <!-- AVIS GOOGLE -->
   <section class="py-12 bg-[#CB8587] px-4 sm:px-6 relative overflow-hidden">
     <!-- (facultatif) un léger motif de fond si tu veux -->
-    <div
-      class="absolute inset-0 bg-cover bg-center opacity-20"
-      style="background-image: url('/images/fonds/petales-01.png')"
-    ></div>
+  <img
+  src="/images/fonds/petales.webp"
+  loading="lazy"
+  alt=""
+  class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
+/>
 
     <div class="relative container mx-auto">
       <h2
@@ -439,17 +473,17 @@ function nextSymbol() {
 const reviews = ref([
   {
     name: "Coraline",
-    avatar: "/images/avatars/1.jpg",
+    avatar: "/images/avatars/1.webp",
     text: "Une fleuriste plus qu’extraordinaire ! Nous l’avons choisie pour réaliser nos montages de fleurs pour notre mariage, et nous n’avons aucun regret. Un travail au top : les compositions étaient vraiment magnifiques, même mieux que ce que nous avions imaginé. Et pour sublimer tout ça, une gentillesse incroyable — nous avons été mis dans un petit cocon. Nous la recommandons à 100 % et nous continuerons à aller chez elle sans aucun doute. Merci pour tout, Mimie Brindille 😍",
   },
   {
     name: "Quentin",
-    avatar: "/images/avatars/2.jpg",
+    avatar: "/images/avatars/2.webp",
     text: "Une fleuriste qui aime son métier, qui aime donner des conseils et qui propose des produits de SUPER qualité. Ses fleurs tiennent toujours très longtemps, et le choix en magasin est toujours varié. Je lui fais toujours 100 % confiance :) Merci Mimie !",
   },
   {
     name: "Isabelle",
-    avatar: "/images/avatars/3.jpg",
+    avatar: "/images/avatars/3.webp",
     text: "Très chouette fleuriste. Des fleurs et plantes toujours très fraîches, un choix qui varie de jour en jour, et également de jolies décorations. Le tout à des prix très abordables. Une fleuriste vraiment à l’écoute du client, qui vous reçoit toujours avec le sourire. Alors allez lui rendre visite, je vous la conseille vivement !",
   },
 ]);

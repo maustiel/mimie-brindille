@@ -186,7 +186,7 @@
             <!-- Bouton -->
             <button
               type="submit"
-              class="bg-[#CB8587] text-white px-4 py-2 rounded-lg hover:bg-[#e09698] transition w-full text-lg"
+              class="bg-[#CB8587] text-white px-4 py-2 rounded-lg hover:bg-[#b06b6d] transition w-full text-lg"
             >
               Envoyer
             </button>

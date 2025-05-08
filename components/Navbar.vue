@@ -8,6 +8,7 @@
         class="text-center hidden md:block px-3 py-2 rounded transition-all duration-300"
         :class="{ 'bg-[#e09698] px-4 py-3': route.path === '/' }"
         @mouseover="hover = '/'" @mouseleave="hover = null"
+        style="text-shadow: 2px 2px 4px rgba(176,107,109,1);"
       >
         <span :class="{ 'text-lg': hover === '/' }">Accueil</span>
       </NuxtLink>
@@ -16,6 +17,7 @@
         class="text-center hidden md:block px-3 py-2 rounded transition-all duration-300"
         :class="{ 'bg-[#e09698] px-4 py-3': route.path === '/catalogue' }"
         @mouseover="hover = '/catalogue'" @mouseleave="hover = null"
+         style="text-shadow: 2px 2px 4px rgba(176,107,109,1);"
       >
         <span :class="{ 'text-lg': hover === '/catalogue' }">Produits et Services</span>
       </NuxtLink>
@@ -31,6 +33,7 @@
         class="text-center hidden md:block px-3 py-2 rounded transition-all duration-300"
         :class="{ 'bg-[#e09698] px-4 py-3': route.path === '/about' }"
         @mouseover="hover = '/about'" @mouseleave="hover = null"
+         style="text-shadow: 2px 2px 4px rgba(176,107,109,1);"
       >
         <span :class="{ 'text-lg': hover === '/about' }">À propos</span>
       </NuxtLink>
@@ -39,6 +42,7 @@
         class="text-center hidden md:block px-3 py-2 rounded transition-all duration-300"
         :class="{ 'bg-[#e09698] px-4 py-3': route.path === '/contact' }"
         @mouseover="hover = '/contact'" @mouseleave="hover = null"
+         style="text-shadow: 2px 2px 4px rgba(176,107,109,1);"
       >
         <span :class="{ 'text-lg': hover === '/contact' }">Contact</span>
       </NuxtLink>
