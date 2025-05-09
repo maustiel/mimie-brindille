@@ -4,11 +4,16 @@
       <div class="container mx-auto pt-14 pb-4 px-0">
       <!-- Hero avec image de fond et overlay -->
       <div class="relative w-full h-64 mb-0 rounded-lg overflow-hidden">
-        <img
-          src="/images/accueil.webp"
-          alt="image de fond de la boutique mimie brindille"
-          class="absolute inset-0 w-full h-full object-cover"
-        />
+        <NuxtImg
+  src="/images/accueil.webp"
+  alt="image de fond de la boutique mimie brindille"
+  class="absolute inset-0 w-full h-full object-cover"
+  width="1920"
+  height="1080"
+  format="webp"
+  quality="70"
+  loading="lazy"
+/>
         <div
           class="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black bg-opacity-40"
         >

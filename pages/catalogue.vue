@@ -1,12 +1,39 @@
 <template>
-  <div class="container mx-auto pt-16 pb-10">
-    <h1 class="text-3xl font-bold text-[#CB8587] mb-5">Produits et Services</h1>
-    <p class="text-lg mb-5">
-      Chez Mimie Brindille, nous vous proposons une large gamme de créations
-      florales pour chaque occasion. Que ce soit pour un mariage, un
-      anniversaire, un événement spécial, ou simplement pour faire plaisir, nos
-      compositions sont réalisées avec passion et fraîcheur.
-    </p>
+  <div>
+    <!-- Bannière Contact -->
+      <div class="container mx-auto pt-14 pb-4 px-0">
+      <!-- Hero avec image de fond et overlay -->
+      <div class="relative w-full h-64 mb-0 rounded-lg overflow-hidden">
+        <NuxtImg
+  src="/images/fonds/fond2.webp"
+  alt="image de fond de la boutique mimie brindille"
+  class="absolute inset-0 w-full h-full object-cover"
+  width="1920"
+  height="1080"
+  format="webp"
+  quality="70"
+  loading="lazy"
+/>
+        <div
+          class="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black bg-opacity-40"
+        >
+          <h1
+            class="helium text-3xl sm:text-4xl md:text-5xl text-white drop-shadow-md text-center px-4"
+            style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"
+          >
+            Produits et Services
+          </h1>
+          <p
+            class="louis mt-2 sm:mt-4 text-base sm:text-lg md:text-xl text-white drop-shadow-md text-center px-6"
+            style="text-shadow: 2px 2px 4px rgba(0,0,0,1);"
+          >
+           Des créations florales pour toutes les occasions, faites avec passion et toujours fraîches.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+
     <br />
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <div
@@ -47,35 +74,55 @@
     >
       <!-- Conteneur blanc : on lui donne une hauteur max et un overflow-y -->
       <div
-        class="bg-white rounded-lg shadow-xl w-full max-w-5xl p-6 relative h-[90vh] sm:max-h-[calc(100vh-2rem)] overflow-y-auto"
-      >
+     ref="modalContent"
+     class="bg-white rounded-lg shadow-xl w-full max-w-5xl p-6 relative h-[90vh] sm:max-h-[calc(100vh-2rem)] overflow-y-auto"
+   >
         <!-- Bouton fermer -->
         <button
           @click="gallery.visible = false"
           class="absolute top-4 right-4 w-12 h-12 bg-[#CB8587] rounded-full flex items-center justify-center text-white hover:bg-[#e09698] transition-shadow shadow-lg z-10"
           aria-label="Fermer la galerie"
         >
-          <!-- transform translate-y-px pour lever l’icône d’1px, ou -translate-y-1 pour 0.25rem si besoin -->
+          
           <span class="text-4xl leading-none transform -translate-y-1">×</span>
         </button>
-        <!-- Grid des images -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <img
-            v-for="(src, idx) in gallery.images"
-            :key="idx"
-            :src="src"
-            class="rounded-md object-cover w-full h-48"
-            :alt="`Image ${idx + 1}`"
-          />
+       <!-- Grid des images -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+  <img
+    v-for="(src, idx) in gallery.images"
+    :key="idx"
+    :src="src"
+    class="rounded-md object-cover w-full h-48"
+    :alt="`Image ${idx + 1}`"
+  />
+</div>
+
+<!-- Bouton sur sa propre ligne, centré -->
+<div class="flex justify-center w-full mt-6">
+  <button
+    @click="scrollToModalTop"
+    class="bg-[#CB8587] text-white px-6 py-2 rounded-lg hover:bg-[#e09698] transition"
+  >
+    Retour en haut
+  </button>
+</div>
         </div>
       </div>
-    </div>
-  </div>
+    
+  
 </template>
 
 <script setup>
 import { ref } from "vue";
+// ❶ ref vers le conteneur scrollable
+const modalContent = ref(null)
 
+// ❷ nouvelle fonction qui remonte ce conteneur
+function scrollToModalTop() {
+  if (modalContent.value) {
+    modalContent.value.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+}
 // 1) Le catalogue enrichi d'un tableau gallery
 const catalogue = [
   {
@@ -265,8 +312,9 @@ function openGallery(item) {
   gallery.value.images = item.gallery;
   gallery.value.visible = true;
 }
+
 </script>
 
 <style scoped>
-/* Aucun style supplémentaire nécessaire */
+
 </style>

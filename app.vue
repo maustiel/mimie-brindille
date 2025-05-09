@@ -18,6 +18,8 @@
             ? 'w-full px-0' // plein écran, sans padding
             : route.name === 'contact'
             ? 'container mx-auto px-2 sm:px-4 lg:px-6' /* Contact : padding réduit */
+              : route.name === 'catalogue'
+            ? 'container mx-auto px-2 sm:px-4 lg:px-6' /* Catalogue : padding réduit */
             : 'container mx-auto px-6' // max-width + padding sur les autres pages
         "
       >
@@ -30,7 +32,20 @@
 
     <!-- 3) Widget en fixed hors du wrapper filtré -->
     <AccessibilityWidget />
-  </div>
+
+     <!-- Bouton “Retour en haut” placé sous la bannière de cookies -->
+      <button
+        @click="scrollToTop"
+        class="fixed bottom-4 right-4 w-12 h-12 bg-[#CB8587] rounded-full shadow-lg flex items-center justify-center hover:bg-[#b06b6d] transition z-10"
+        aria-label="Retour en haut"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-6 h-6 fill-white">
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          />
+        </svg>
+      </button>
+    </div>
 </template>
 
 <script setup>
@@ -45,6 +60,11 @@ import { useRoute } from "vue-router";
 
 const store = useAccessibilityStore();
 const route = useRoute();
+
+// Fonction de défilement fluide vers le haut
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 </script>
 
 <style>

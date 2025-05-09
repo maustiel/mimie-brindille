@@ -140,7 +140,7 @@
           alt="Bouquet de fleurs dans les tons orange"
           class="rounded-lg shadow-md hover:scale-105 transition"
           width="400"
-          height="360"
+          height="400"
           quality="75"
           loading="lazy"
         />

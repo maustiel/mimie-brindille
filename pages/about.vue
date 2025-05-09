@@ -5,16 +5,16 @@
       class="grid grid-cols-1 lg:grid-cols-2 rounded-lg overflow-hidden mb-12"
     >
       <div class="p-8 flex flex-col justify-center">
-        <h1 class="text-4xl font-bold text-[#CB8587] mb-4">
-          À propos de Mimie Brindille
+        <h1 class="helium text-2xl sm:text-3xl md:text-5xl text-[#CB8587] leading-tight">
+          l'univers de Mimie Brindille
         </h1>
-        <p class="text-lg mb-4">
+        <p class=" louis text-lg mb-4">
           Bienvenue chez <strong>Mimie Brindille</strong>, votre fleuriste de
           confiance à Pont-à-Celles ! Depuis [année], nous créons des
           compositions florales délicates et personnalisées pour chaque moment
           de la vie.
         </p>
-        <p class="text-lg">
+        <p class=" louis text-lg">
           Notre boutique est un lieu où la nature rencontre la créativité. Nous
           sélectionnons les fleurs les plus fraîches et les plus belles, en
           privilégiant des fournisseurs locaux et durables. Chez Mimie
