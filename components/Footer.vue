@@ -1,10 +1,14 @@
 <template>
   <div class="relative mt-20">
-    <!-- Image décorative -->
+    <!-- Bloc contenant une image décorative en fond (fleurs au-dessus du footer) -->
     <div class="relative overflow-visible"></div>
-     <div class="absolute top-[-60px] left-0 w-full h-[95px] bg-cover bg-center bg-no-repeat"
+    <!-- Image positionnée en haut du footer pour une transition décorative -->
+    <div
+      class="absolute top-[-60px] left-0 w-full h-[95px] bg-cover bg-center bg-no-repeat"
       style="background-image: url('/images/fleurs-footer.webp')"
     ></div>
+
+    <!-- CONTENU DU FOOTER -->
 
     <footer class="bg-[#CB8587] text-white py-8 relative z-10">
       <div

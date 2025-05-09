@@ -1,31 +1,35 @@
 <template>
   <div>
     <!-- Bannière Contact -->
-      <div class="container mx-auto pt-14 pb-4 px-0">
+    <div class="container mx-auto pt-14 pb-4 px-0">
       <!-- Hero avec image de fond et overlay -->
       <div class="relative w-full h-64 mb-0 rounded-lg overflow-hidden">
         <NuxtImg
-  src="/images/accueil.webp"
-  alt="image de fond de la boutique mimie brindille"
-  class="absolute inset-0 w-full h-full object-cover"
-  width="1920"
-  height="1080"
-  format="webp"
-  quality="70"
-  loading="lazy"
-/>
+          src="/images/accueil.webp"
+          alt="image de fond de la boutique mimie brindille"
+          class="absolute inset-0 w-full h-full object-cover"
+          width="1920"
+          height="1080"
+          format="webp"
+          quality="70"
+          loading="lazy"
+        />
+        <!-- Contenu centré de la bannière avec overlay sombre -->
+
         <div
           class="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black bg-opacity-40"
         >
+          <!-- Titre principal -->
+
           <h1
             class="helium text-3xl sm:text-4xl md:text-5xl text-white drop-shadow-md text-center px-4"
-            style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"
+            style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
           >
             Contactez-moi
           </h1>
           <p
             class="louis mt-2 sm:mt-4 text-base sm:text-lg md:text-xl text-white drop-shadow-md text-center px-6"
-            style="text-shadow: 2px 2px 4px rgba(0,0,0,1);"
+            style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)"
           >
             N’hésitez pas à me contacter par téléphone, par e-mail ou via le
             formulaire ci-dessous.
@@ -33,9 +37,10 @@
         </div>
       </div>
     </div>
+    <!-- SECTION CONTACT PRINCIPALE -->
 
     <div class="container mx-auto pt-4 pb-10 px-4">
-      <!-- 2 colonnes : cartes+map à gauche, formulaire à droite -->
+      <!-- Grille à deux colonnes : gauche = infos, droite = formulaire -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
         <!-- Gauche -->
         <div class="space-y-8">
@@ -203,10 +208,14 @@
 
       <!-- Accès et transport -->
       <div class="py-10 px-4">
+        <!-- Titre principal centré -->
+
         <h2 class="text-3xl font-bold text-[#CB8587] mb-6 text-center">
           Accès et transport
         </h2>
+        <!-- Deux blocs côte à côte en desktop, en colonne sur mobile -->
         <div class="flex flex-col md:flex-row justify-between gap-6">
+          <!-- Bloc : Accès en voiture -->
           <div class="bg-white p-6 rounded-lg shadow-lg md:w-1/2">
             <h3 class="text-xl font-semibold text-[#CB8587] mb-4">
               Accès en voiture
@@ -223,6 +232,8 @@
               <li>Un parking public est disponible à proximité immédiate.</li>
             </ul>
           </div>
+
+          <!-- Bloc : Accès en transport en commun -->
           <div class="bg-white p-6 rounded-lg shadow-lg md:w-1/2">
             <h3 class="text-xl font-semibold text-[#CB8587] mb-4">
               Accès en transport en commun
@@ -249,6 +260,7 @@
 </script>
 
 <style scoped>
+/* Ajoute un espacement vertical entre les éléments de la grille sur petits écrans */
 @media (max-width: 640px) {
   .grid-cols-1 > div {
     margin-bottom: 1rem;

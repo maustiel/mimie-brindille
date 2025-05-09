@@ -1,126 +1,137 @@
 <template>
   <div>
-    <!-- Bannière Contact -->
-      <div class="container mx-auto pt-14 pb-4 px-0">
-      <!-- Hero avec image de fond et overlay -->
+    <!-- BANNIÈRE PRODUITS ET SERVICES -->
+    <div class="container mx-auto pt-14 pb-4 px-0">
+      <!-- Hero avec image de fond fixe + overlay noir transparent -->
       <div class="relative w-full h-64 mb-0 rounded-lg overflow-hidden">
+        <!-- Image de fond -->
         <NuxtImg
-  src="/images/fonds/fond2.webp"
-  alt="image de fond de la boutique mimie brindille"
-  class="absolute inset-0 w-full h-full object-cover"
-  width="1920"
-  height="1080"
-  format="webp"
-  quality="70"
-  loading="lazy"
-/>
+          src="/images/fonds/fond2.webp"
+          alt="image de fond de la boutique mimie brindille"
+          class="absolute inset-0 w-full h-full object-cover"
+          width="1920"
+          height="1080"
+          format="webp"
+          quality="70"
+          loading="lazy"
+        />
+        <!-- Overlay avec texte centré -->
         <div
           class="relative z-10 flex flex-col items-center justify-center w-full h-full bg-black bg-opacity-40"
         >
+          <!-- Titre principal -->
           <h1
             class="helium text-3xl sm:text-4xl md:text-5xl text-white drop-shadow-md text-center px-4"
-            style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"
+            style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
           >
             Produits et Services
           </h1>
+          <!-- Sous-titre ou slogan -->
           <p
             class="louis mt-2 sm:mt-4 text-base sm:text-lg md:text-xl text-white drop-shadow-md text-center px-6"
-            style="text-shadow: 2px 2px 4px rgba(0,0,0,1);"
+            style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)"
           >
-           Des créations florales pour toutes les occasions, faites avec passion et toujours fraîches.
+            Des créations florales pour toutes les occasions, faites avec
+            passion et toujours fraîches.
           </p>
         </div>
       </div>
     </div>
-    </div>
+  </div>
 
-    <br />
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div
-        v-for="(item, index) in catalogue"
-        :key="index"
-        class="bg-white shadow-lg rounded-xl p-4 hover:shadow-xl transition-transform transform hover:scale-105 cursor-pointer"
-        @click="openGallery(item)"
-      >
-        <img
-          :src="item.image"
-          :alt="item.name"
-          class="rounded-xl mb-4 w-full h-96 object-cover"
-        />
-        <h2 class="text-lg font-semibold">{{ item.name }}</h2>
-        <p class="text-sm text-[#CB8587]">{{ item.description }}</p>
-      </div>
-    </div>
+  <br />
 
-    <!-- Texte et bouton en bas de la page -->
-    <div class="mt-10 text-center">
-      <p class="text-lg font-semibold text-[#CB8587]">
-        Venez découvrir mes réalisations en boutique ou contactez-moi pour une
-        demande personnalisée ! 🌼
-      </p>
-      <NuxtLink
-        to="/contact"
-        class="mt-4 inline-block bg-[#CB8587] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#b46b6d] transition duration-300"
-      >
-        Contactez-moi
-      </NuxtLink>
-    </div>
-
-    <!-- Modal galerie -->
+  <!-- GRILLE DE PRODUITS / SERVICES -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Chaque item correspond à une carte cliquable du catalogue -->
     <div
-      v-if="gallery.visible"
-        @click.self="gallery.visible = false"
-      class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 overflow-auto"
+      v-for="(item, index) in catalogue"
+      :key="index"
+      class="bg-white shadow-lg rounded-xl p-4 hover:shadow-xl transition-transform transform hover:scale-105 cursor-pointer"
+      @click="openGallery(item)"
     >
-      <!-- Conteneur blanc : on lui donne une hauteur max et un overflow-y -->
-      <div
-     ref="modalContent"
-     class="bg-white rounded-lg shadow-xl w-full max-w-5xl p-6 relative h-[90vh] sm:max-h-[calc(100vh-2rem)] overflow-y-auto"
-   >
-        <!-- Bouton fermer -->
-        <button
-          @click="gallery.visible = false"
-          class="absolute top-4 right-4 w-12 h-12 bg-[#CB8587] rounded-full flex items-center justify-center text-white hover:bg-[#e09698] transition-shadow shadow-lg z-10"
-          aria-label="Fermer la galerie"
-        >
-          
-          <span class="text-4xl leading-none transform -translate-y-1">×</span>
-        </button>
-       <!-- Grid des images -->
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-  <img
-    v-for="(src, idx) in gallery.images"
-    :key="idx"
-    :src="src"
-    class="rounded-md object-cover w-full h-48"
-    :alt="`Image ${idx + 1}`"
-  />
-</div>
+      <!-- Image du produit / service -->
+      <img
+        :src="item.image"
+        :alt="item.name"
+        class="rounded-xl mb-4 w-full h-96 object-cover"
+      />
+      <!-- Nom du produit -->
+      <h2 class="text-lg font-semibold">{{ item.name }}</h2>
+      <!-- Description du produit -->
+      <p class="text-sm text-[#CB8587]">{{ item.description }}</p>
+    </div>
+  </div>
 
-<!-- Bouton sur sa propre ligne, centré -->
-<div class="flex justify-center w-full mt-6">
-  <button
-    @click="scrollToModalTop"
-    class="bg-[#CB8587] text-white px-6 py-2 rounded-lg hover:bg-[#e09698] transition"
+  <!-- APPEL À L’ACTION EN BAS DE PAGE -->
+  <div class="mt-10 text-center">
+    <!-- Message d’invitation -->
+    <p class="text-lg font-semibold text-[#CB8587]">
+      Venez découvrir mes réalisations en boutique ou contactez-moi pour une
+      demande personnalisée ! 🌼
+    </p>
+    <!-- Bouton vers la page de contact -->
+    <NuxtLink
+      to="/contact"
+      class="mt-4 inline-block bg-[#CB8587] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#b46b6d] transition duration-300"
+    >
+      Contactez-moi
+    </NuxtLink>
+  </div>
+
+  <!-- MODALE GALERIE -->
+  <div
+    v-if="gallery.visible"
+    @click.self="gallery.visible = false"
+    class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4 overflow-auto"
   >
-    Retour en haut
-  </button>
-</div>
-        </div>
+    <!-- Conteneur blanc de la modale (avec scroll si le contenu dépasse) -->
+    <div
+      ref="modalContent"
+      class="bg-white rounded-lg shadow-xl w-full max-w-5xl p-6 relative h-[90vh] sm:max-h-[calc(100vh-2rem)] overflow-y-auto"
+    >
+      <!-- Bouton de fermeture (croix en haut à droite), désormais en fixed -->
+      <button
+        @click="gallery.visible = false"
+        class="fixed top-4 right-4 w-12 h-12 bg-[#CB8587] rounded-full flex items-center justify-center text-white hover:bg-[#e09698] transition-shadow shadow-lg z-50"
+        aria-label="Fermer la galerie"
+      >
+        <span class="text-4xl leading-none transform -translate-y-1">×</span>
+      </button>
+
+      <!-- Grille responsive contenant les images -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img
+          v-for="(src, idx) in gallery.images"
+          :key="idx"
+          :src="src"
+          class="rounded-md object-cover w-full h-48"
+          :alt="`Image ${idx + 1}`"
+        />
       </div>
-    
-  
+
+      <!-- Bouton pour revenir en haut de la gallerie modale -->
+      <div class="flex justify-center w-full mt-6">
+        <button
+          @click="scrollToModalTop"
+          class="bg-[#CB8587] text-white px-6 py-2 rounded-lg hover:bg-[#e09698] transition"
+        >
+          Retour en haut
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
 // ❶ ref vers le conteneur scrollable
-const modalContent = ref(null)
+const modalContent = ref(null);
 
 // ❷ nouvelle fonction qui remonte ce conteneur
 function scrollToModalTop() {
   if (modalContent.value) {
-    modalContent.value.scrollTo({ top: 0, behavior: 'smooth' })
+    modalContent.value.scrollTo({ top: 0, behavior: "smooth" });
   }
 }
 // 1) Le catalogue enrichi d'un tableau gallery
@@ -243,7 +254,8 @@ const catalogue = [
   },
   {
     name: "Décorations florales pour événements",
-    description: "Mariages, baptêmes, réceptions… fleurissez vos moments précieux",
+    description:
+      "Mariages, baptêmes, réceptions… fleurissez vos moments précieux",
     image: "/images/catalogue/events/event3.webp",
     gallery: [
       "/images/catalogue/events/event1.webp",
@@ -312,9 +324,6 @@ function openGallery(item) {
   gallery.value.images = item.gallery;
   gallery.value.visible = true;
 }
-
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

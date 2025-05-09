@@ -1,26 +1,32 @@
 <template>
   <!-- HERO -->
   <section class="relative">
+    <!-- Image de fond-->
     <div
       class="w-full h-[80vh] sm:h-screen bg-cover bg-center"
       style="background-image: url('/images/accueil.webp')"
     >
+      <!-- Overlay noir semi-transparent pour lisibilité -->
       <div class="absolute inset-0 bg-black/50"></div>
+      <!-- Contenu centré verticalement et horizontalement -->
       <div
         class="relative z-10 container mx-auto h-full flex flex-col justify-center items-center text-center px-4"
       >
+        <!-- Titre principal -->
         <h1
           class="helium text-4xl sm:text-5xl md:text-6xl text-white leading-snug"
           style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
         >
           Bienvenue chez Mimie Brindille
         </h1>
+        <!--Sous-titre -->
         <p
           class="louis mt-4 text-lg sm:text-xl md:text-2xl text-white max-w-md mx-auto"
           style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)"
         >
           Votre fleuriste à Pont-à-Celles.
         </p>
+        <!-- Bouton d’appel à l’action vers le catalogue -->
         <NuxtLink
           to="/catalogue"
           class="mt-8 inline-block bg-[#CB8587] hover:bg-[#b06b6d] text-white font-medium text-lg px-6 py-3 rounded-lg shadow-lg transition"
@@ -31,7 +37,7 @@
     </div>
   </section>
 
-  <!-- PRÉSENTATION CARRÉS AMÉLIORÉE -->
+  <!-- PRÉSENTATION -->
   <section class="py-12 px-4 sm:px-6">
     <div
       class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4"
@@ -54,7 +60,7 @@
 
       <!-- Cadre texte avec offset brand pink -->
       <div class="relative w-full md:w-1/2 max-w-md">
-        <!-- bloc principal -->
+        <!-- Bloc texte à droite -->
         <div
           class="relative z-10 bg-white rounded-lg p-6 shadow-lg flex flex-col justify-center"
         >
@@ -62,8 +68,13 @@
             Qui suis-je ?
           </h2>
           <p class="louis text-base text-gray-700 mb-6">
-          Fleuriste passionnée depuis mon plus jeune âge, je mets tout mon cœur à sélectionner des fleurs de saison, toujours fraîches. Chaque composition est pensée comme une œuvre unique, reflet de vos émotions et de l’occasion : mariage, anniversaire, remerciement ou simple envie d’émerveiller.
+            Fleuriste passionnée depuis mon plus jeune âge, je mets tout mon
+            cœur à sélectionner des fleurs de saison, toujours fraîches. Chaque
+            composition est pensée comme une œuvre unique, reflet de vos
+            émotions et de l’occasion : mariage, anniversaire, remerciement ou
+            simple envie d’émerveiller.
           </p>
+          <!-- Lien vers la page À propos -->
           <NuxtLink
             to="/about"
             class="inline-block bg-[#CB8587] hover:bg-[#b06b6d] text-white font-medium text-lg px-4 py-2 rounded-lg transition self-start"
@@ -75,121 +86,134 @@
     </div>
   </section>
 
- <!-- GALERIE -->
-<section class="py-12 px-4 sm:px-6">
-  <div class="container mx-auto text-center">
-    <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
-      Découvrez mes réalisations
-    </h2>
-    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-      <NuxtLink to="/catalogue" key="compo37">
-        <NuxtImg
-          src="/images/catalogue/compo/compo37.webp"
-          alt="composition florale dans un vase pour pâques"
-          class="rounded-lg shadow-md hover:scale-105 transition"
-          width="400"
-          height="400"
-          quality="75"
-          loading="lazy"
-        />
-      </NuxtLink>
+  <!-- GALERIE -->
+  <section class="py-12 px-4 sm:px-6">
+    <div class="container mx-auto text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
+        Découvrez mes réalisations
+      </h2>
+      <!-- Grille responsive de photos (liens vers le catalogue) -->
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <NuxtLink to="/catalogue" key="compo37">
+          <NuxtImg
+            src="/images/catalogue/compo/compo37.webp"
+            alt="composition florale dans un vase pour pâques"
+            class="rounded-lg shadow-md hover:scale-105 transition"
+            width="400"
+            height="400"
+            quality="75"
+            loading="lazy"
+          />
+        </NuxtLink>
 
-      <NuxtLink to="/catalogue" key="compo17">
-        <NuxtImg
-          src="/images/catalogue/compo/compo17.webp"
-          alt="composition florale sur une buche d'arbre"
-          class="rounded-lg shadow-md hover:scale-105 transition"
-          width="400"
-          height="400"
-          quality="75"
-          loading="lazy"
-        />
-      </NuxtLink>
+        <NuxtLink to="/catalogue" key="compo17">
+          <NuxtImg
+            src="/images/catalogue/compo/compo17.webp"
+            alt="composition florale sur une buche d'arbre"
+            class="rounded-lg shadow-md hover:scale-105 transition"
+            width="400"
+            height="400"
+            quality="75"
+            loading="lazy"
+          />
+        </NuxtLink>
 
-      <NuxtLink to="/catalogue" key="compo18">
-        <NuxtImg
-          src="/images/catalogue/compo/compo18.webp"
-          alt="composition florale ronde dans les tons rouge"
-          class="rounded-lg shadow-md hover:scale-105 transition"
-          width="400"
-          height="400"
-          quality="75"
-          loading="lazy"
-        />
-      </NuxtLink>
+        <NuxtLink to="/catalogue" key="compo18">
+          <NuxtImg
+            src="/images/catalogue/compo/compo18.webp"
+            alt="composition florale ronde dans les tons rouge"
+            class="rounded-lg shadow-md hover:scale-105 transition"
+            width="400"
+            height="400"
+            quality="75"
+            loading="lazy"
+          />
+        </NuxtLink>
 
-      <NuxtLink to="/catalogue" key="bouquet1">
-        <NuxtImg
-          src="/images/catalogue/bouquet/bouquet1.webp"
-          alt="Bouquet de fleurs dans les tons rose et mauve"
-          class="rounded-lg shadow-md hover:scale-105 transition"
-          width="400"
-          height="400"
-          quality="75"
-          loading="lazy"
-        />
-      </NuxtLink>
+        <NuxtLink to="/catalogue" key="bouquet1">
+          <NuxtImg
+            src="/images/catalogue/bouquet/bouquet1.webp"
+            alt="Bouquet de fleurs dans les tons rose et mauve"
+            class="rounded-lg shadow-md hover:scale-105 transition"
+            width="400"
+            height="400"
+            quality="75"
+            loading="lazy"
+          />
+        </NuxtLink>
 
-      <NuxtLink to="/catalogue" key="bouquet2">
-        <NuxtImg
-          src="/images/catalogue/bouquet/bouquet2.webp"
-          alt="Bouquet de fleurs dans les tons orange"
-          class="rounded-lg shadow-md hover:scale-105 transition"
-          width="400"
-          height="400"
-          quality="75"
-          loading="lazy"
-        />
-      </NuxtLink>
+        <NuxtLink to="/catalogue" key="bouquet2">
+          <NuxtImg
+            src="/images/catalogue/bouquet/bouquet2.webp"
+            alt="Bouquet de fleurs dans les tons orange"
+            class="rounded-lg shadow-md hover:scale-105 transition"
+            width="400"
+            height="400"
+            quality="75"
+            loading="lazy"
+          />
+        </NuxtLink>
 
-      <NuxtLink to="/catalogue" key="bouquet12">
-        <NuxtImg
-          src="/images/catalogue/bouquet/bouquet12.webp"
-          alt="Bouquet de fleurs dans les tons rose et rouge"
-          class="rounded-lg shadow-md hover:scale-105 transition"
-          width="400"
-          height="400"
-          quality="75"
-          loading="lazy"
-        />
-      </NuxtLink>
+        <NuxtLink to="/catalogue" key="bouquet12">
+          <NuxtImg
+            src="/images/catalogue/bouquet/bouquet12.webp"
+            alt="Bouquet de fleurs dans les tons rose et rouge"
+            class="rounded-lg shadow-md hover:scale-105 transition"
+            width="400"
+            height="400"
+            quality="75"
+            loading="lazy"
+          />
+        </NuxtLink>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- SYMBOLIQUE DES FLEURS (responsive amélioré) -->
+  <!-- SYMBOLIQUE DES FLEURS -->
   <section class="relative py-12 bg-white text-center overflow-hidden">
-    <!-- Fond transparent -->
+    <!-- Image de fond en transparence pour un effet doux -->
     <div
       class="absolute inset-0 bg-cover bg-center opacity-20"
       style="background-image: url('/images/fonds/fond6.webp')"
     ></div>
 
+    <!-- Conteneur principal centré -->
     <div class="relative w-full mx-auto px-2 sm:px-4 lg:px-6">
       <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
         La symbolique des fleurs
       </h2>
 
+      <!-- Carrousel horizontal contenant les différentes fleurs -->
       <div class="relative overflow-hidden -mx-2 sm:-mx-4">
-        <!-- Slides -->
+        <!-- Wrapper des slides avec transition fluide -->
         <div
           class="flex transition-transform duration-500 ease-in-out"
           :style="{ transform: `translateX(-${currentSymbolIndex * 100}%)` }"
         >
+          <!-- Chaque slide représente une fleur -->
           <div
             v-for="(fleur, idx) in symbolique"
             :key="idx"
             class="w-full flex-shrink-0 px-2 sm:px-4"
           >
+            <!-- Image de la fleur -->
             <img
               :src="fleur.image"
               :alt="fleur.name"
               class="mx-auto w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mb-4 shadow-lg"
             />
+
+            <!-- Nom de la fleur -->
             <h3 class="text-xl font-semibold text-[#CB8587] mb-2">
               {{ fleur.name }}
             </h3>
-            <p class="louis text-gray-700 mb-1">{{ fleur.meaning }}</p>
+
+            <!-- Signification de la fleur -->
+            <p class="louis text-gray-700 mb-1">
+              {{ fleur.meaning }}
+            </p>
+
+            <!-- Contexte ou occasion idéale -->
             <p class="louis text-gray-500 italic text-sm">
               {{ fleur.context }}
             </p>
@@ -242,17 +266,19 @@
       </div>
     </div>
   </section>
+
   <!-- AVIS GOOGLE -->
   <section class="py-12 bg-[#CB8587] px-4 sm:px-6 relative overflow-hidden">
-   <NuxtImg
-  src="/images/fonds/petales.webp"
-  alt="motif de fond pétales"
-  loading="lazy"
-  class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
-  width="1920"
-  height="1080"
-  quality="70"
-/>
+    <!-- Image décorative de fond en transparence -->
+    <NuxtImg
+      src="/images/fonds/petales.webp"
+      alt="motif de fond pétales"
+      loading="lazy"
+      class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
+      width="1920"
+      height="1080"
+      quality="70"
+    />
 
     <div class="relative container mx-auto">
       <h2
@@ -331,7 +357,9 @@
         </svg>
       </div>
 
+      <!-- Liste des avis clients -->
       <div class="max-w-4xl mx-auto space-y-12">
+        <!-- Affichage alterné gauche/droite selon l’index -->
         <div
           v-for="(rev, i) in reviews"
           :key="i"
@@ -359,7 +387,7 @@
   <section class="py-12 bg-[#f5edf0] px-4 sm:px-6">
     <div class="container mx-auto text-center">
       <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
-       Mon brin en plus...
+        Mon brin en plus...
       </h2>
 
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -367,6 +395,7 @@
         <div
           class="p-6 bg-white shadow-md rounded-lg flex flex-col items-center transform transition-transform duration-300 hover:scale-105"
         >
+          <!-- Pictogramme fleur -->
           <img
             src="/icons/fleur.png"
             alt="Icône fleur"
@@ -460,29 +489,33 @@
 </template>
 
 <script setup>
-
+// Importation de l'API `ref` de Vue pour la réactivité
 import { ref } from "vue";
-import { useHead } from '#imports'
-
+// Importation de la fonction useHead pour définir les balises <head> dynamiquement
+import { useHead } from "#imports";
+// Définition des balises SEO de la page d’accueil
 useHead({
-  title: 'Mimie Brindille - Fleuriste à Pont-à-Celles',
+  title: "Mimie Brindille - Fleuriste à Pont-à-Celles",
   meta: [
     {
-      name: 'description',
-      content: 'Découvrez le langage des fleurs avec Mimie Brindille, votre fleuriste passionnée à Pont-à-Celles.',
+      name: "description",
+      content:
+        "Découvrez le langage des fleurs avec Mimie Brindille, votre fleuriste passionnée à Pont-à-Celles.",
     },
-    { property: 'og:title', content: 'Mimie Brindille - Fleuriste à Pont-à-Celles' },
     {
-      property: 'og:description',
-      content: 'Des compositions florales uniques, symboliques et locales, pour chaque moment important.',
+      property: "og:title",
+      content: "Mimie Brindille - Fleuriste à Pont-à-Celles",
     },
-    
+    {
+      property: "og:description",
+      content:
+        "Des compositions florales uniques, symboliques et locales, pour chaque moment important.",
+    },
   ],
-  
-})
+});
 
-
-// Définis ici ta liste de fleurs et leurs symboliques
+// Liste des fleurs à afficher dans le carrousel symbolique
+// Chaque fleur contient son nom, une image, une signification et un contexte d’utilisation
 const symbolique = [
   {
     name: "Rose",
@@ -525,12 +558,14 @@ const symbolique = [
   },
 ];
 
+// Index de la fleur actuellement affichée dans le carrousel
 const currentSymbolIndex = ref(0);
-
+// Fonction pour afficher la fleur précédente (carrousel circulaire)
 function prevSymbol() {
   currentSymbolIndex.value =
     (currentSymbolIndex.value - 1 + symbolique.length) % symbolique.length;
 }
+// Fonction pour afficher la fleur suivante (carrousel circulaire)
 function nextSymbol() {
   currentSymbolIndex.value = (currentSymbolIndex.value + 1) % symbolique.length;
 }

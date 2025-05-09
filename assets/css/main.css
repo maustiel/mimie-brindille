@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Tes overrides ou variables CSS ici, par exemple : */
+/* overrides ou variables CSS  */
 :root {
     --color-primary: #e89ca1;
 }
