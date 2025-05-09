@@ -464,7 +464,7 @@
 </template>
 
 <script setup>
-import { NuxtImg } from "#components";
+
 import { ref } from "vue";
 
 // Définis ici ta liste de fleurs et leurs symboliques

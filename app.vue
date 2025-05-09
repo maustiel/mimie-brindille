@@ -38,6 +38,7 @@ import Navbar from "~/components/Navbar.vue";
 import Footer from "~/components/Footer.vue";
 import CookieBanner from "~/components/CookieBanner.vue";
 import AccessibilityWidget from "~/components/AccessibilityWidget.vue";
+import { NuxtImg } from "#components";
 
 import { useAccessibilityStore } from "~/stores/accessibility";
 import { useRoute } from "vue-router";

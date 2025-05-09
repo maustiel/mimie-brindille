@@ -26,90 +26,119 @@
         <div
           class="w-full max-w-xs sm:max-w-sm lg:max-w-md aspect-square overflow-hidden rounded-lg shadow-lg"
         >
-          <img
+          <NuxtImg
             src="/images/autres/mimie10.webp"
             alt="entrée fleurie Boutique Mimie Brindille"
             class="w-full h-full object-cover"
+            width="800"
+            height="800"
+            quality="70"
+            format="webp"
+            loading="lazy"
           />
         </div>
       </div>
     </div>
 
-<!-- la boutic -->
- <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8 text-center">
-      la boutique 
+    <!-- la boutic -->
+    <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8 text-center">
+      la boutique
     </h2>
-<section
+    <section class="relative py-16 mb-8 overflow-hidden">
+      <!-- Image de fond -->
+      <NuxtImg
+        src="/images/fonds/fond1.webp"
+        alt=""
+        aria-hidden="true"
+        class="absolute inset-0 w-full h-full object-cover"
+        width="1600"
+        height="900"
+        quality="70"
+        format="webp"
+        loading="lazy"
+      />
+      <!-- optionnel : un léger overlay sombre pour extraire le motif -->
+      <div class="absolute inset-0 bg-white/20"></div>
 
-    class="relative py-16 mb-8"
-    style="background-image: url('/images/fonds/fond1.jpg'); background-size: cover; background-position: center;"
-  >
-   
-    <!-- optionnel : un léger overlay sombre pour extraire le motif -->
-    <div class="absolute inset-0 bg-white/20"></div>
-
-    <div class="relative container mx-auto px-4">
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
-        <!-- Card 1 -->
-        <div
-          class="relative aspect-[4/5] rounded-xl overflow-hidden mx-auto w-3/4 sm:w-full shadow-2xl"
-        >
-          <img
-            src="/images/autres/mimie4.webp"
-            alt="devanture fleurie de la boutique mimie brindille"
-            class="absolute inset-0 w-full h-full object-cover "
-          />
+      <div class="relative container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+          <!-- Card 1 -->
           <div
-            class="absolute inset-0  flex items-center justify-center"
+            class="relative aspect-[4/5] rounded-xl overflow-hidden mx-auto w-3/4 sm:w-full shadow-2xl"
           >
-           
+            <NuxtImg
+              src="/images/autres/mimie4.webp"
+              alt="devanture fleurie de la boutique mimie brindille"
+              class="absolute inset-0 w-full h-full object-cover"
+              width="800"
+              height="1000"
+              format="webp"
+              loading="lazy"
+            />
+
+            <div
+              class="absolute inset-0 flex items-center justify-center"
+            ></div>
           </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div
-          class="relative aspect-[4/5] rounded-xl overflow-hidden mx-auto w-3/4 sm:w-full shadow-2xl"
-        >
-          <img
-            src="/images/autres/mimie7.webp"
-            alt="intérieur de la boutique fleurie mimie brindille"
-            class="absolute inset-0 w-full h-full object-cover"
-          />
+          <!-- Card 2 -->
           <div
-            class="absolute inset-0 flex items-center justify-center"
+            class="relative aspect-[4/5] rounded-xl overflow-hidden mx-auto w-3/4 sm:w-full shadow-2xl"
           >
-          
+            <NuxtImg
+              src="/images/autres/mimie7.webp"
+              alt="intérieur de la boutique fleurie mimie brindille"
+              class="absolute inset-0 w-full h-full object-cover"
+              width="800"
+              height="1000"
+              format="webp"
+              quality="70"
+              loading="lazy"
+            />
+
+            <div
+              class="absolute inset-0 flex items-center justify-center"
+            ></div>
           </div>
-        </div>
 
-        <!-- Card 3 -->
-        <div
-          class="relative aspect-[4/5] rounded-xl overflow-hidden mx-auto w-3/4 sm:w-full shadow-2xl"
-        >
-          <img
-            src="/images/autres/mimie9.webp"
-            alt="intérieur de la boutique fleurie mimie brindille"
-            class="absolute inset-0 w-full h-full object-cover"
-          />
+          <!-- Card 3 -->
           <div
-            class="absolute inset-0  flex items-center justify-center"
+            class="relative aspect-[4/5] rounded-xl overflow-hidden mx-auto w-3/4 sm:w-full shadow-2xl"
           >
-           
+            <NuxtImg
+              src="/images/autres/mimie9.webp"
+              alt="intérieur de la boutique fleurie mimie brindille"
+              class="absolute inset-0 w-full h-full object-cover"
+              width="800"
+              height="1000"
+              format="webp"
+              quality="70"
+              loading="lazy"
+            />
+
+            <div
+              class="absolute inset-0 flex items-center justify-center"
+            ></div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- Notre histoire -->
     <div class="relative mb-12">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         <div>
-          <img
-            src="/images/test.png"
-            alt="illustration de Fleur"
-            class="w-full h-auto object-cover rounded-lg"
-          />
+         <NuxtImg
+  src="/images/test.png"
+  alt="illustration de Fleur"
+  class="w-full h-auto object-cover rounded-lg"
+  width="600"
+  height="600"
+  format="webp"
+  quality="70"
+  loading="lazy"
+/>
+
         </div>
         <div class="bg-white p-8 rounded-lg shadow-lg relative lg:-ml-16 z-10">
           <h3 class="text-2xl font-semibold text-[#CB8587] mb-4">
