@@ -462,6 +462,25 @@
 <script setup>
 
 import { ref } from "vue";
+import { useHead } from '#imports'
+
+useHead({
+  title: 'Mimie Brindille - Fleuriste à Pont-à-Celles',
+  meta: [
+    {
+      name: 'description',
+      content: 'Découvrez le langage des fleurs avec Mimie Brindille, votre fleuriste passionnée à Pont-à-Celles.',
+    },
+    { property: 'og:title', content: 'Mimie Brindille - Fleuriste à Pont-à-Celles' },
+    {
+      property: 'og:description',
+      content: 'Des compositions florales uniques, symboliques et locales, pour chaque moment important.',
+    },
+    
+  ],
+  
+})
+
 
 // Définis ici ta liste de fleurs et leurs symboliques
 const symbolique = [
