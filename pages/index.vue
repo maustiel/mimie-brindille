@@ -10,15 +10,15 @@
         class="relative z-10 container mx-auto h-full flex flex-col justify-center items-center text-center px-4"
       >
         <h1
-    class="helium text-4xl sm:text-5xl md:text-6xl text-white leading-snug"
-    style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"
-  >
+          class="helium text-4xl sm:text-5xl md:text-6xl text-white leading-snug"
+          style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
+        >
           Bienvenue chez Mimie Brindille
         </h1>
         <p
-    class="louis mt-4 text-lg sm:text-xl md:text-2xl text-white max-w-md mx-auto"
-    style="text-shadow: 2px 2px 4px rgba(0,0,0,1);"
-  >
+          class="louis mt-4 text-lg sm:text-xl md:text-2xl text-white max-w-md mx-auto"
+          style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)"
+        >
           Votre fleuriste à Pont-à-Celles.
         </p>
         <NuxtLink
@@ -43,10 +43,12 @@
           class="absolute inset-0 bg-[#FDEEF0] rounded-lg translate-x-3 translate-y-3"
         ></div>
         <!-- photo -->
-        <img
+        <NuxtImg
           src="/images/autres/mimie8.webp"
-          alt="Mimie Brindille"
+          alt="Mimie Brindille dans sa boutique tenant une composition florale"
           class="relative z-10 rounded-lg shadow-lg w-full h-80 object-cover"
+          quality="80"
+          lazy
         />
       </div>
 
@@ -77,7 +79,7 @@
     </div>
   </section>
 
-  <!-- GALERIE -->
+ <!-- GALERIE -->
 <section class="py-12 px-4 sm:px-6">
   <div class="container mx-auto text-center">
     <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
@@ -85,126 +87,175 @@
     </h2>
     <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
       <NuxtLink to="/catalogue" key="compo37">
-        <img
+        <NuxtImg
           src="/images/catalogue/compo/compo37.webp"
-          alt="Bouquet 1"
-          loading="lazy"
+          alt="composition florale dans un vase pour pâques"
           class="rounded-lg shadow-md hover:scale-105 transition"
+          width="400"
+          height="400"
+          quality="75"
+          loading="lazy"
         />
       </NuxtLink>
+
       <NuxtLink to="/catalogue" key="compo17">
-        <img
+        <NuxtImg
           src="/images/catalogue/compo/compo17.webp"
-          alt="Bouquet 2"
-          loading="lazy"
+          alt="composition florale sur une buche d'arbre"
           class="rounded-lg shadow-md hover:scale-105 transition"
+          width="400"
+          height="400"
+          quality="75"
+          loading="lazy"
         />
       </NuxtLink>
+
       <NuxtLink to="/catalogue" key="compo18">
-        <img
+        <NuxtImg
           src="/images/catalogue/compo/compo18.webp"
-          alt="Bouquet 3"
-          loading="lazy"
+          alt="composition florale ronde dans les tons rouge"
           class="rounded-lg shadow-md hover:scale-105 transition"
+          width="400"
+          height="400"
+          quality="75"
+          loading="lazy"
         />
       </NuxtLink>
+
       <NuxtLink to="/catalogue" key="bouquet1">
-        <img
+        <NuxtImg
           src="/images/catalogue/bouquet/bouquet1.webp"
-          alt="Bouquet 4"
-          loading="lazy"
+          alt="Bouquet de fleurs dans les tons rose et mauve"
           class="rounded-lg shadow-md hover:scale-105 transition"
+          width="400"
+          height="400"
+          quality="75"
+          loading="lazy"
         />
       </NuxtLink>
+
       <NuxtLink to="/catalogue" key="bouquet2">
-        <img
+        <NuxtImg
           src="/images/catalogue/bouquet/bouquet2.webp"
-          alt="Bouquet 5"
-          loading="lazy"
+          alt="Bouquet de fleurs dans les tons orange"
           class="rounded-lg shadow-md hover:scale-105 transition"
+          width="400"
+          height="400"
+          quality="75"
+          loading="lazy"
         />
       </NuxtLink>
+
       <NuxtLink to="/catalogue" key="bouquet12">
-        <img
+        <NuxtImg
           src="/images/catalogue/bouquet/bouquet12.webp"
-          alt="Bouquet 6"
-          loading="lazy"
+          alt="Bouquet de fleurs dans les tons rose et rouge"
           class="rounded-lg shadow-md hover:scale-105 transition"
+          width="400"
+          height="400"
+          quality="75"
+          loading="lazy"
         />
       </NuxtLink>
     </div>
   </div>
 </section>
 
- <!-- SYMBOLIQUE DES FLEURS (responsive amélioré) -->
-<section class="relative py-12 bg-white text-center overflow-hidden">
-  <!-- Fond transparent -->
-  <div
-    class="absolute inset-0 bg-cover bg-center opacity-20"
-    style="background-image: url('/images/fonds/fond6.webp')"
-  ></div>
+  <!-- SYMBOLIQUE DES FLEURS (responsive amélioré) -->
+  <section class="relative py-12 bg-white text-center overflow-hidden">
+    <!-- Fond transparent -->
+    <div
+      class="absolute inset-0 bg-cover bg-center opacity-20"
+      style="background-image: url('/images/fonds/fond6.webp')"
+    ></div>
 
-  <div class="relative w-full mx-auto px-2 sm:px-4 lg:px-6">
-    <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
-      La symbolique des fleurs
-    </h2>
+    <div class="relative w-full mx-auto px-2 sm:px-4 lg:px-6">
+      <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
+        La symbolique des fleurs
+      </h2>
 
-    <div class="relative overflow-hidden -mx-2 sm:-mx-4">
-      <!-- Slides -->
-      <div
-        class="flex transition-transform duration-500 ease-in-out"
-        :style="{ transform: `translateX(-${currentSymbolIndex * 100}%)` }"
-      >
+      <div class="relative overflow-hidden -mx-2 sm:-mx-4">
+        <!-- Slides -->
         <div
-          v-for="(fleur, idx) in symbolique"
-          :key="idx"
-          class="w-full flex-shrink-0 px-2 sm:px-4"
+          class="flex transition-transform duration-500 ease-in-out"
+          :style="{ transform: `translateX(-${currentSymbolIndex * 100}%)` }"
         >
-          <img
-            :src="fleur.image"
-            :alt="fleur.name"
-            class="mx-auto w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mb-4 shadow-lg"
-          />
-          <h3 class="text-xl font-semibold text-[#CB8587] mb-2">
-            {{ fleur.name }}
-          </h3>
-          <p class="louis text-gray-700 mb-1">{{ fleur.meaning }}</p>
-          <p class="louis text-gray-500 italic text-sm">{{ fleur.context }}</p>
+          <div
+            v-for="(fleur, idx) in symbolique"
+            :key="idx"
+            class="w-full flex-shrink-0 px-2 sm:px-4"
+          >
+            <img
+              :src="fleur.image"
+              :alt="fleur.name"
+              class="mx-auto w-24 h-24 sm:w-32 sm:h-32 object-cover rounded-full mb-4 shadow-lg"
+            />
+            <h3 class="text-xl font-semibold text-[#CB8587] mb-2">
+              {{ fleur.name }}
+            </h3>
+            <p class="louis text-gray-700 mb-1">{{ fleur.meaning }}</p>
+            <p class="louis text-gray-500 italic text-sm">
+              {{ fleur.context }}
+            </p>
+          </div>
         </div>
+
+        <!-- Flèche gauche -->
+        <button
+          @click="prevSymbol"
+          class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-[#CB8587] bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
+          aria-label="Précédent"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+
+        <!-- Flèche droite -->
+        <button
+          @click="nextSymbol"
+          class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-[#CB8587] bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
+          aria-label="Suivant"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
       </div>
-
-      <!-- Flèche gauche -->
-      <button
-        @click="prevSymbol"
-        class="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-[#CB8587] bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
-        aria-label="Précédent"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-
-      <!-- Flèche droite -->
-      <button
-        @click="nextSymbol"
-        class="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-[#CB8587] bg-opacity-75 hover:bg-opacity-100 rounded-full p-2 shadow"
-        aria-label="Suivant"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
     </div>
-  </div>
-</section>
+  </section>
   <!-- AVIS GOOGLE -->
   <section class="py-12 bg-[#CB8587] px-4 sm:px-6 relative overflow-hidden">
-    <!-- un léger motif de fond --> 
-  <img
+   <NuxtImg
   src="/images/fonds/petales.webp"
+  alt="motif de fond pétales"
   loading="lazy"
-  alt=""
   class="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none"
+  width="1920"
+  height="1080"
+  quality="70"
 />
 
     <div class="relative container mx-auto">
@@ -335,10 +386,9 @@
         </div>
 
         <!-- 2) Bouquet anti-gaspi tous les lundis -->
-         <div
-        class="p-6 bg-white shadow-md rounded-lg flex flex-col items-center
-               transform transition-transform duration-300 hover:scale-105"
-      >
+        <div
+          class="p-6 bg-white shadow-md rounded-lg flex flex-col items-center transform transition-transform duration-300 hover:scale-105"
+        >
           <!-- Pictogramme calendrier FontAwesome -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -367,10 +417,9 @@
         </div>
 
         <!-- 3) Les fleurs dans la peau -->
-         <div
-        class="p-6 bg-white shadow-md rounded-lg flex flex-col items-center
-               transform transition-transform duration-300 hover:scale-105"
-      >
+        <div
+          class="p-6 bg-white shadow-md rounded-lg flex flex-col items-center transform transition-transform duration-300 hover:scale-105"
+        >
           <!-- Pictogramme cœur FontAwesome -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -415,45 +464,46 @@
 </template>
 
 <script setup>
+import { NuxtImg } from "#components";
 import { ref } from "vue";
 
 // Définis ici ta liste de fleurs et leurs symboliques
 const symbolique = [
   {
     name: "Rose",
-    image: "/images/fleurs/rose.jpg",
+    image: "/images/fleurs/rose.webp",
     meaning: "Amour et passion",
     context: "Offerte pour déclarations ou anniversaires de rencontre.",
   },
   {
     name: "Lys",
-    image: "/images/fleurs/lys.jpg",
+    image: "/images/fleurs/lys.webp",
     meaning: "Pureté et élégance",
     context: "Idéal pour les mariages et cérémonies religieuses.",
   },
   {
     name: "Tournesol",
-    image: "/images/fleurs/tournesol.jpg",
+    image: "/images/fleurs/tournesol.webp",
     meaning: "Joie et optimisme",
     context: "Parfait pour encourager ou féliciter.",
   },
   {
     name: "Tulipe",
-    image: "/images/fleurs/tulipe.jpg",
+    image: "/images/fleurs/tulipe.webp",
     meaning: "Amour parfait, déclaration sincère",
     context:
       "Idéale pour la Saint‐Valentin ou une première déclaration d’amour.",
   },
   {
     name: "Pivoine",
-    image: "/images/fleurs/pivoine.jpg",
+    image: "/images/fleurs/pivoine.webp",
     meaning: "Prospérité, romance, bonheur conjugal",
     context:
       "Souvent offerte aux jeunes mariés ou pour un anniversaire de mariage.",
   },
   {
     name: "Dahlia",
-    image: "/images/fleurs/dahlia.jpg",
+    image: "/images/fleurs/dahlia.webp",
     meaning: "Élégance, dignité, engagement",
     context:
       "Parfait pour féliciter une réussite ou exprimer une profonde reconnaissance.",

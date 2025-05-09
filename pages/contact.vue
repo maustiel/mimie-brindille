@@ -6,7 +6,7 @@
       <div class="relative w-full h-64 mb-0 rounded-lg overflow-hidden">
         <img
           src="/images/accueil.webp"
-          alt="Contactez-nous"
+          alt="image de fond de la boutique mimie brindille"
           class="absolute inset-0 w-full h-full object-cover"
         />
         <div
