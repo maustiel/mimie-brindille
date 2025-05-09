@@ -5,21 +5,20 @@
       class="grid grid-cols-1 lg:grid-cols-2 rounded-lg overflow-hidden mb-12"
     >
       <div class="p-8 flex flex-col justify-center">
-        <h1 class="helium text-2xl sm:text-3xl md:text-5xl text-[#CB8587] leading-tight">
+        <h1
+          class="helium text-2xl sm:text-3xl md:text-5xl text-[#CB8587] leading-tight mb-4"
+        >
           l'univers de Mimie Brindille
         </h1>
-        <p class=" louis text-lg mb-4">
-          Bienvenue chez <strong>Mimie Brindille</strong>, votre fleuriste de
-          confiance à Pont-à-Celles ! Depuis [année], nous créons des
-          compositions florales délicates et personnalisées pour chaque moment
-          de la vie.
+        <p class="louis text-lg mb-4">
+          Bienvenue chez Mimie Brindille, fleuriste passionnée à Pont-à-Celles.
+          Depuis 2 ans , je crée des compositions florales délicates et
+          personnalisées pour accompagner vos moments de vie, petits et grands.
         </p>
-        <p class=" louis text-lg">
-          Notre boutique est un lieu où la nature rencontre la créativité. Nous
-          sélectionnons les fleurs les plus fraîches et les plus belles, en
-          privilégiant des fournisseurs locaux et durables. Chez Mimie
-          Brindille, chaque bouquet est une œuvre d’art, conçue avec amour,
-          passion et attention aux détails.
+        <p class="louis text-lg">
+          Dans ma boutique, la nature s’exprime avec créativité. Chaque fleur
+          est choisie avec soin, en privilégiant la fraîcheur et  la qualité. Chaque bouquet est pensé comme une création
+          unique, façonnée avec amour, sensibilité et souci du détail.
         </p>
       </div>
       <div class="flex justify-center">
@@ -42,7 +41,7 @@
 
     <!-- la boutic -->
     <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8 text-center">
-      la boutique
+      La boutique
     </h2>
     <section class="relative py-16 mb-8 overflow-hidden">
       <!-- Image de fond -->
@@ -128,33 +127,32 @@
     <div class="relative mb-12">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
         <div>
-         <NuxtImg
-  src="/images/test.png"
-  alt="illustration de Fleur"
-  class="w-full h-auto object-cover rounded-lg"
-  width="600"
-  height="600"
-  format="webp"
-  quality="70"
-  loading="lazy"
-/>
-
+          <NuxtImg
+            src="/images/test.png"
+            alt="illustration de Fleur"
+            class="w-full h-auto object-cover rounded-lg"
+            width="600"
+            height="600"
+            format="webp"
+            quality="70"
+            loading="lazy"
+          />
         </div>
         <div class="bg-white p-8 rounded-lg shadow-lg relative lg:-ml-16 z-10">
           <h3 class="text-2xl font-semibold text-[#CB8587] mb-4">
-            Notre histoire
+            Mon histoire
           </h3>
           <p class="text-lg mb-3">
-            L’histoire de notre boutique commence il y a plusieurs années,
-            portée par la passion de la fleur et l’amour de la nature. Chaque
-            jour, nous travaillons avec soin pour offrir des compositions
-            uniques, inspirées par les saisons et les émotions.
+            C’est l’amour des fleurs et le respect du rythme de la nature qui
+            ont donné naissance à la boutique. Depuis, chaque
+            jour est une nouvelle occasion de créer des compositions florales
+            empreintes de douceur, d’élégance et d’émotion. Inspirée par les
+            saisons et les envies de chacun, chaque création raconte une
+            histoire unique.
           </p>
           <p class="text-lg">
-            Aujourd’hui, Mimie Brindille est un lieu de création et de partage,
-            où chaque bouquet raconte une histoire. Nous sommes fiers de notre
-            héritage local et de contribuer au bien-être de notre communauté, un
-            bouquet à la fois.
+           Aujourd’hui, Mimie Brindille est un espace d’inspiration et de générosité, où chaque bouquet porte un message.
+Fière de mes racines locales, je m’attache à fleurir le quotidien de ma communauté, avec authenticité et bienveillance, un bouquet à la fois.
           </p>
         </div>
       </div>

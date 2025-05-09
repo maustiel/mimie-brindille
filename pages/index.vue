@@ -25,7 +25,7 @@
           to="/catalogue"
           class="mt-8 inline-block bg-[#CB8587] hover:bg-[#b06b6d] text-white font-medium text-lg px-6 py-3 rounded-lg shadow-lg transition"
         >
-          Découvrez nos Produits et Services
+          Entrez dans mon univers floral
         </NuxtLink>
       </div>
     </div>
@@ -59,14 +59,10 @@
           class="relative z-10 bg-white rounded-lg p-6 shadow-lg flex flex-col justify-center"
         >
           <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-4">
-            Qui est Mimie Brindille ?
+            Qui suis-je ?
           </h2>
           <p class="louis text-base text-gray-700 mb-6">
-            Artisan fleuriste passionnée depuis plus de 10 ans, je mets tout mon
-            cœur à sélectionner des fleurs de saison, toujours fraîches et de
-            provenance locale. Chaque composition est pensée comme une œuvre
-            unique, reflet de vos émotions et de l’occasion : mariage,
-            anniversaire, remerciement ou simplement envie d’émerveiller.
+          Fleuriste passionnée depuis mon plus jeune âge, je mets tout mon cœur à sélectionner des fleurs de saison, toujours fraîches. Chaque composition est pensée comme une œuvre unique, reflet de vos émotions et de l’occasion : mariage, anniversaire, remerciement ou simple envie d’émerveiller.
           </p>
           <NuxtLink
             to="/about"
@@ -83,7 +79,7 @@
 <section class="py-12 px-4 sm:px-6">
   <div class="container mx-auto text-center">
     <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
-      Découvrez nos réalisations
+      Découvrez mes réalisations
     </h2>
     <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
       <NuxtLink to="/catalogue" key="compo37">
@@ -262,7 +258,7 @@
       <h2
         class="text-2xl sm:text-3xl font-bold text-[#ffffff] text-center mb-8"
       >
-        Ils parlent de nous
+        Ils parlent de Mimie Brindille
       </h2>
 
       <!-- 5 étoiles remplies -->
@@ -359,11 +355,11 @@
     </div>
   </section>
 
-  <!-- POURQUOI NOUS CHOISIR -->
+  <!-- POURQUOI me CHOISIR -->
   <section class="py-12 bg-[#f5edf0] px-4 sm:px-6">
     <div class="container mx-auto text-center">
       <h2 class="text-2xl sm:text-3xl font-bold text-[#CB8587] mb-8">
-        Pourquoi choisir Mimie Brindille ?
+       Mon brin en plus...
       </h2>
 
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

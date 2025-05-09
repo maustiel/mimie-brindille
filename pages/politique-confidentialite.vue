@@ -12,14 +12,11 @@
     <section class="mb-8">
       <h2 class="text-xl font-semibold">Collecte des Informations</h2>
       <p class="mt-2">
-        Nous collectons des informations personnelles que vous nous fournissez directement lorsque vous vous inscrivez à notre newsletter, remplissez un formulaire de contact ou effectuez un achat. Ces informations peuvent inclure :
+        Nous collectons des informations personnelles que vous nous fournissez directement lorsque vous remplissez un formulaire de contact. Ces informations peuvent inclure :
       </p>
       <ul class="list-disc pl-6">
         <li>Nom et prénom</li>
         <li>Adresse e-mail</li>
-        <li>Adresse de livraison et de facturation</li>
-        <li>Numéro de téléphone</li>
-        <li>Informations de paiement</li>
       </ul>
     </section>
 
@@ -29,8 +26,6 @@
         Nous utilisons les informations collectées pour les fins suivantes :
       </p>
       <ul class="list-disc pl-6">
-        <li>Traiter vos commandes et paiements</li>
-        <li>Vous envoyer des informations relatives à votre commande</li>
         <li>Améliorer nos services et notre site web</li>
         <li>Répondre à vos demandes et questions</li>
       </ul>
@@ -46,14 +41,14 @@
     <section class="mb-8">
       <h2 class="text-xl font-semibold">Partage des Informations</h2>
       <p class="mt-2">
-        Nous ne vendons, échangeons ni louons vos informations personnelles à des tiers. Toutefois, nous pouvons partager vos informations avec des prestataires de services qui nous aident à traiter les commandes, à gérer notre site web et à fournir des services. Ces prestataires sont tenus de protéger vos informations et de les utiliser uniquement dans le cadre de leurs services.
+        Nous ne vendons, échangeons ni louons vos informations personnelles à des tiers. Toutefois, nous pouvons partager vos informations avec des prestataires de services qui nous aident  à gérer notre site web et à fournir des services. Ces prestataires sont tenus de protéger vos informations et de les utiliser uniquement dans le cadre de leurs services.
       </p>
     </section>
 
     <section class="mb-8">
       <h2 class="text-xl font-semibold">Cookies</h2>
       <p class="mt-2">
-        Nous utilisons des cookies pour améliorer votre expérience sur notre site, personnaliser le contenu et analyser l'utilisation du site. Vous pouvez configurer votre navigateur pour refuser les cookies, mais cela pourrait affecter certaines fonctionnalités de notre site.
+        Nous utilisons des cookies pour améliorer votre expérience sur notre site, personnaliser le contenu et analyser l'utilisation du site. Vous pouvez refuser les cookies.
       </p>
     </section>
 
@@ -86,7 +81,7 @@
       <p class="mt-2">
         Si vous avez des questions concernant cette politique de confidentialité ou si vous souhaitez exercer vos droits, vous pouvez nous contacter à l'adresse suivante :
       </p>
-      <p class="mt-2">Email : contact@mimie-brindille.com</p>
+      <a href="mailto:maurine.meeus@ifosup.wavre.be" class="text-blue-500">maurine.meeus@ifosup.wavre.be</a>.
     </section>
   </div>
 </template>

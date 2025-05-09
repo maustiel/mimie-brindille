@@ -55,14 +55,14 @@
     <!-- Texte et bouton en bas de la page -->
     <div class="mt-10 text-center">
       <p class="text-lg font-semibold text-[#CB8587]">
-        Venez découvrir nos réalisations en boutique ou contactez-nous pour une
+        Venez découvrir mes réalisations en boutique ou contactez-moi pour une
         demande personnalisée ! 🌼
       </p>
       <NuxtLink
         to="/contact"
         class="mt-4 inline-block bg-[#CB8587] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#b46b6d] transition duration-300"
       >
-        Contactez-nous
+        Contactez-moi
       </NuxtLink>
     </div>
 
@@ -243,7 +243,7 @@ const catalogue = [
   },
   {
     name: "Décorations florales pour événements",
-    description: "Mariages, baptêmes, réceptions…",
+    description: "Mariages, baptêmes, réceptions… fleurissez vos moments précieux",
     image: "/images/catalogue/events/event3.webp",
     gallery: [
       "/images/catalogue/events/event1.webp",

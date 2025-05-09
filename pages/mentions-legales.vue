@@ -9,25 +9,25 @@
       </p>
       <ul class="list-disc pl-6">
         <li><strong>Propriétaire du site</strong> : Mimie Brindille</li>
-        <li><strong>Responsable de la publication</strong> : [Nom du responsable], [Fonction]</li>
-        <li><strong>Hébergeur</strong> : [Nom de l'hébergeur], [Adresse de l'hébergeur]</li>
+        <li><strong>Responsable de la publication</strong> : Meeus Maurine, étudiante webdesigneuse</li>
+        <li><strong>Hébergeur</strong> : OVH cloud, https://www.ovhcloud.com/en/</li>
       </ul>
     </section>
 
     <section class="mb-8">
       <h2 class="text-xl font-semibold">2. Propriété intellectuelle</h2>
       <p class="mt-2">
-        Le site <strong>Mimie Brindille</strong> et l'ensemble de son contenu (textes, images, logos, vidéos, etc.) sont protégés par les lois françaises et internationales relatives à la propriété intellectuelle. Toute reproduction, représentation, diffusion ou exploitation totale ou partielle des contenus du site est strictement interdite sans l'autorisation préalable de l'éditeur.
+        Le site <strong>Mimie Brindille</strong> et l'ensemble de son contenu (textes, images, logos, vidéos, etc.) sont protégés par les lois belges et internationales relatives à la propriété intellectuelle. Toute reproduction, représentation, diffusion ou exploitation totale ou partielle des contenus du site est strictement interdite sans l'autorisation préalable de l'éditeur.
       </p>
     </section>
 
     <section class="mb-8">
       <h2 class="text-xl font-semibold">3. Protection des données personnelles</h2>
       <p class="mt-2">
-        Conformément à la législation en vigueur, vous disposez d'un droit d'accès, de rectification, d'opposition et de suppression des données vous concernant. Pour exercer vos droits, vous pouvez nous contacter à l'adresse suivante : <a href="mailto:contact@mimie-brindille.com" class="text-blue-500">contact@mimie-brindille.com</a>.
+        Conformément à la législation en vigueur, vous disposez d'un droit d'accès, de rectification, d'opposition et de suppression des données vous concernant. Pour exercer vos droits, vous pouvez nous contacter à l'adresse suivante : <a href="mailto:maurine.meeus@ifosup.wavre.be" class="text-blue-500">maurine.meeus@ifosup.wavre.be</a>.
       </p>
       <p class="mt-2">
-        Pour plus d'informations, veuillez consulter notre <NuxtLink to="/politique-de-confidentialite" class="hover:underline">Politique de confidentialité</NuxtLink>.
+        Pour plus d'informations, veuillez consulter notre <NuxtLink to="/politique-confidentialite" class="hover:underline">Politique de confidentialité</NuxtLink>.
       </p>
     </section>
 
@@ -41,7 +41,7 @@
     <section class="mb-8">
       <h2 class="text-xl font-semibold">5. Cookies</h2>
       <p class="mt-2">
-        Ce site utilise des cookies pour améliorer l'expérience utilisateur et analyser l'utilisation du site. En poursuivant votre navigation, vous acceptez l'utilisation des cookies. Pour en savoir plus sur la gestion des cookies, veuillez consulter notre <NuxtLink to="/politique-de-confidentialite" class="hover:underline">Politique de confidentialité</NuxtLink>.
+        Ce site utilise des cookies pour améliorer l'expérience utilisateur et analyser l'utilisation du site. En poursuivant votre navigation, vous acceptez l'utilisation des cookies. Pour en savoir plus sur la gestion des cookies, veuillez consulter notre <NuxtLink to="/politique-confidentialite" class="hover:underline">Politique de confidentialité</NuxtLink>.
       </p>
     </section>
 
@@ -62,7 +62,7 @@
     <section class="mb-8">
       <h2 class="text-xl font-semibold">8. Contact</h2>
       <p class="mt-2">
-        Pour toute question relative aux mentions légales, veuillez nous contacter à l'adresse suivante : <a href="mailto:contact@mimie-brindille.com" class="text-blue-500">contact@mimie-brindille.com</a>.
+        Pour toute question relative aux mentions légales, veuillez nous contacter à l'adresse suivante : <a href="mailto:maurine.meeus@ifosup.wavre.be" class="text-blue-500">maurine.meeus@ifosup.wavre.be</a>.
       </p>
     </section>
   </div>
