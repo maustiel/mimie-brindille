@@ -57,9 +57,9 @@
         class="rounded-xl mb-4 w-full h-96 object-cover"
       />
       <!-- Nom du produit -->
-      <h2 class="text-lg font-semibold">{{ item.name }}</h2>
+      <h2 class="louis text-lg font-semibold">{{ item.name }}</h2>
       <!-- Description du produit -->
-      <p class="text-sm text-[#CB8587]">{{ item.description }}</p>
+      <p class=" louis text-sm text-[#CB8587]">{{ item.description }}</p>
     </div>
   </div>
 

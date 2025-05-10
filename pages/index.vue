@@ -42,12 +42,8 @@
     <div
       class="container mx-auto flex flex-col md:flex-row items-center justify-center gap-4"
     >
-      <!-- Cadre photo avec offset clair -->
+      <!-- Cadre photo  -->
       <div class="relative w-full md:w-1/2 max-w-md">
-        <!-- fond offset derrière la photo -->
-        <div
-          class="absolute inset-0 bg-[#FDEEF0] rounded-lg translate-x-3 translate-y-3"
-        ></div>
         <!-- photo -->
         <NuxtImg
           src="/images/autres/mimie8.webp"
@@ -58,7 +54,7 @@
         />
       </div>
 
-      <!-- Cadre texte avec offset brand pink -->
+      <!-- Cadre texte -->
       <div class="relative w-full md:w-1/2 max-w-md">
         <!-- Bloc texte à droite -->
         <div
@@ -374,7 +370,7 @@
           />
 
           <!-- Bulle de texte -->
-          <div class="bg-white p-6 rounded-lg shadow-lg mx-4 relative flex-1">
+          <div class="louis bg-white p-6 rounded-lg shadow-lg mx-4 relative flex-1">
             <p class="text-gray-800">{{ rev.text }}</p>
             <p class="mt-4 font-semibold text-gray-900">— {{ rev.name }}</p>
           </div>
@@ -404,7 +400,7 @@
           <h3 class="text-xl sm:text-2xl font-bold text-[#CB8587]">
             Créations uniques
           </h3>
-          <p class="mt-2 text-sm sm:text-base text-gray-600">
+          <p class=" louis mt-2 text-sm sm:text-base text-gray-600">
             Chaque bouquet est conçu avec soin pour un rendu unique et
             personnalisé.
           </p>
@@ -436,7 +432,7 @@
           <h3 class="text-xl sm:text-2xl font-bold text-[#CB8587]">
             Bouquet anti-gaspi tous les lundis
           </h3>
-          <p class="mt-2 text-sm sm:text-base text-gray-600">
+          <p class=" louis mt-2 text-sm sm:text-base text-gray-600">
             Profitez chaque lundi d’un bouquet composé des fins de stock à -30%.
           </p>
         </div>
@@ -478,7 +474,7 @@
           <h3 class="text-xl sm:text-2xl font-bold text-[#CB8587]">
             Les fleurs dans la peau
           </h3>
-          <p class="mt-2 text-sm sm:text-base text-gray-600">
+          <p class=" louis mt-2 text-sm sm:text-base text-gray-600">
             Une passion des fleurs depuis toujours, venez découvrir mon univers
             créatif !
           </p>

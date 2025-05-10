@@ -153,14 +153,14 @@
           <h3 class="text-2xl font-semibold text-[#CB8587] mb-4">
             Mon histoire
           </h3>
-          <p class="text-lg mb-3">
+          <p class=" louis text-lg mb-3">
             C’est l’amour des fleurs et le respect du rythme de la nature qui
             ont donné naissance à la boutique. Depuis, chaque jour est une
             nouvelle occasion de créer des compositions florales empreintes de
             douceur, d’élégance et d’émotion. Inspirée par les saisons et les
             envies de chacun, chaque création raconte une histoire unique.
           </p>
-          <p class="text-lg">
+          <p class=" louis text-lg">
             Aujourd’hui, Mimie Brindille est un espace d’inspiration et de
             générosité, où chaque bouquet porte un message. Fière de mes racines
             locales, je m’attache à fleurir le quotidien de ma communauté, avec
