@@ -1,7 +1,6 @@
 <template>
   <!-- 1) Wrapper racine pour interdire le scroll horizontal -->
   <div class="overflow-x-hidden">
-
     <!-- 2) Bloc principal contenant Navbar, contenu et Footer -->
     <div
       :class="[
@@ -14,7 +13,7 @@
 
       <!-- Zone principale : s’adapte en fonction de la route -->
       <main
-        class="flex-1" 
+        class="flex-1"
         :class="
           route.name === 'index'
             ? 'w-full px-0' // Page d’accueil : plein écran sans padding
@@ -46,18 +45,23 @@
       aria-label="Retour en haut"
     >
       <!-- Icône flèche vers le haut -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-6 h-6 fill-white">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 384 512"
+        class="w-6 h-6 fill-white"
+      >
         <path
           d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
         />
       </svg>
     </button>
-
   </div>
 </template>
 
-
 <script setup>
+useHead({
+  link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+});
 import Navbar from "~/components/Navbar.vue";
 import Footer from "~/components/Footer.vue";
 import CookieBanner from "~/components/CookieBanner.vue";
@@ -72,8 +76,8 @@ const route = useRoute();
 
 // Fonction de défilement fluide vers le haut
 const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-}
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 </script>
 
 <style>

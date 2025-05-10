@@ -59,21 +59,26 @@
         <span :class="{ 'text-lg': hover === '/contact' }">Contact</span>
       </NuxtLink>
 
-      <!-- Icône du menu burger -->
-      <button @click="toggleMenu" class="md:hidden absolute right-6 top-8 z-30">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-9 w-9 text-white"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          stroke-width="2"
-        >
-          <line x1="3" y1="12" x2="21" y2="12" />
-          <line x1="3" y1="6" x2="21" y2="6" />
-          <line x1="3" y1="18" x2="21" y2="18" />
-        </svg>
-      </button>
+    <!-- Icône du menu burger -->
+<button
+  @click="toggleMenu"
+  class="md:hidden absolute right-6 top-8 z-30"
+  aria-label="Ouvrir le menu de navigation"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-9 w-9 text-white"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+    stroke-width="2"
+  >
+    <line x1="3" y1="12" x2="21" y2="12" />
+    <line x1="3" y1="6" x2="21" y2="6" />
+    <line x1="3" y1="18" x2="21" y2="18" />
+  </svg>
+</button>
+
     </nav>
 
     <!-- Image décorative fleurs du bas-->
