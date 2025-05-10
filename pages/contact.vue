@@ -290,7 +290,44 @@
 </template>
 
 <script setup>
-// Aucun JS supplémentaire nécessaire
+import { useHead } from '#imports'
+
+useHead({
+  title: "Contact - Mimie Brindille, Fleuriste à Pont-à-Celles",
+  meta: [
+    {
+      name: "description",
+      content: "Besoin d’un bouquet personnalisé ou d’un renseignement ? Contactez-moi facilement par téléphone, mail ou via le formulaire. Je vous réponds avec plaisir depuis ma boutique à Pont-à-Celles.",
+    },
+    {
+      property: "og:title",
+      content: "Contact - Mimie Brindille, Fleuriste à Pont-à-Celles",
+    },
+    {
+      property: "og:description",
+      content: "Prenez contact avec Mimie Brindille pour toute demande florale, commande personnalisée ou projet événementiel.",
+    },
+    {
+      property: "og:image",
+      content: "https://mimiebrindille.be/images/catalogue/events/event3.webp", // à adapter avec une image réelle
+    },
+    {
+      property: "og:url",
+      content: "https://mimiebrindille.be/contact",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
+    }
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: "https://mimiebrindille.be/contact",
+    }
+  ]
+})
+
 </script>
 
 <style scoped>

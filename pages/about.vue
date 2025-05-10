@@ -172,7 +172,46 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useHead } from '#imports'
+
+useHead({
+  title: "À propos - Mimie Brindille, Fleuriste passionnée à Pont-à-Celles",
+  meta: [
+    {
+      name: "description",
+      content: "Fleuriste indépendante à Pont-à-Celles, je partage avec vous ma passion pour les fleurs, la nature et l’art floral. Découvrez mon parcours et les valeurs qui m’inspirent chaque jour.",
+    },
+    {
+      property: "og:title",
+      content: "À propos - Mimie Brindille",
+    },
+    {
+      property: "og:description",
+      content: "Apprenez-en plus sur mon univers, mon métier de fleuriste et la philosophie qui anime Mimie Brindille.",
+    },
+    {
+      property: "og:image",
+      content: "https://mimiebrindille.be/images/autres/mimie8.webp", // à remplacer par ton image réelle
+    },
+    {
+      property: "og:url",
+      content: "https://mimiebrindille.be/about",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
+    }
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: "https://mimiebrindille.be/about",
+    }
+  ]
+})
+
+</script>
 
 <style scoped>
 /* Neutralise le décalage mobile */

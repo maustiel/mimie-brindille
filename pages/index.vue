@@ -490,13 +490,15 @@ import { ref } from "vue";
 // Importation de la fonction useHead pour définir les balises <head> dynamiquement
 import { useHead } from "#imports";
 // Définition des balises SEO de la page d’accueil
+
+
 useHead({
   title: "Mimie Brindille - Fleuriste à Pont-à-Celles",
   meta: [
     {
       name: "description",
       content:
-        "Découvrez le langage des fleurs avec Mimie Brindille, votre fleuriste passionnée à Pont-à-Celles.",
+        "Je vous accueille dans mon univers floral à Pont-à-Celles, où chaque bouquet raconte une histoire.",
     },
     {
       property: "og:title",
@@ -507,8 +509,27 @@ useHead({
       content:
         "Des compositions florales uniques, symboliques et locales, pour chaque moment important.",
     },
+    {
+      property: "og:image",
+      content: "https://mimiebrindille.be/images/logo.webp", 
+    },
+    {
+      property: "og:url",
+      content: "https://mimiebrindille.be/",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
+    }
   ],
-});
+  link: [
+    {
+      rel: "canonical",
+      href: "https://mimiebrindille.be/",
+    }
+  ]
+})
+
 
 // Liste des fleurs à afficher dans le carrousel symbolique
 // Chaque fleur contient son nom, une image, une signification et un contexte d’utilisation
