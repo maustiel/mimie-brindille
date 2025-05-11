@@ -31,6 +31,7 @@
       <!-- Pied de page + bannière cookie -->
       <Footer />
       <CookieBanner />
+      
     </div>
 
     <!-- 3) Composants fixés indépendamment du flux principal -->
@@ -78,6 +79,34 @@ const route = useRoute();
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+// 👉 Intégration Google Analytics sur consentement
+import { watch } from 'vue'
+import { useCookieConsent } from '~/composables/useCookieConsent'
+import { useHead } from '#app'
+
+const { status } = useCookieConsent()
+const GA_ID = useRuntimeConfig().public.gaMeasurementId
+
+watch(status, (val) => {
+  if (val === 'accepted') {
+    useHead({
+      script: [
+        {
+          src: `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`,
+          async: true
+        },
+        {
+          children: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}  
+gtag('js', new Date());
+gtag('config', '${GA_ID}');  `
+        }
+      ]
+    })
+  }
+})
 </script>
 
 <style>

@@ -1,24 +1,31 @@
 import { defineNuxtConfig } from 'nuxt/config'
 
-// Configuration principale du projet Nuxt
 export default defineNuxtConfig({
-  // Modules utilisés dans le projet
+  // — tes modules existants —
   modules: [
-    '@nuxtjs/tailwindcss',     // Intègre Tailwind CSS
-    '@pinia/nuxt',             // Active le store Pinia
-    'nuxt-easy-lightbox',      // Permet d’afficher les images en lightbox
-    '@nuxt/image',             // Module d’optimisation d’images Nuxt
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    'nuxt-easy-lightbox',
+    '@nuxt/image',
   ],
 
-  // Fichier CSS global à charger dans tout le projet
+  // — ton CSS global —
   css: ['~/assets/css/main.css'],
 
-  // Permet de figer le comportement du framework à une date donnée (utile pour éviter les breaking changes après mises à jour)
+  // — compatibilité Nuxt —
   compatibilityDate: '2025-02-10',
 
-  // Configuration du module Nuxt Image
+  // — options du module image —
   image: {
-    quality: 60,                         // Qualité par défaut des images optimisées
-    formats: ['avif', 'webp', 'jpg'],    // Formats d’images pris en charge
+    quality: 60,
+    formats: ['avif', 'webp', 'jpg'],
+  },
+
+  // — NOUVEAU : ta clé GA exposée en public runtimeConfig —
+  runtimeConfig: {
+    public: {
+      // Attention : la variable d’environnement GA_MEASUREMENT_ID doit être définie dans ton .env
+      gaMeasurementId: process.env.GA_MEASUREMENT_ID || ''
+    }
   }
 })
