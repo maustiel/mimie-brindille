@@ -1,41 +1,55 @@
 <template>
-  <!-- HERO -->
-  <section class="relative">
-    <!-- Image de fond-->
-    <div
-      class="w-full h-[80vh] sm:h-screen bg-cover bg-center"
-      style="background-image: url('/images/accueil.webp')"
+ <!-- HERO -->
+ <section class="relative w-full h-[80vh] sm:h-screen overflow-hidden">
+  <picture class="absolute inset-0 w-full h-full">
+    <!-- Mobile (≤640px) -->
+    <source
+      media="(max-width: 640px)"
+      srcset="/images/accueil-mobile.webp"
+      type="image/webp"
+    />
+    
+    <!-- Desktop -->
+    <img
+      src="/images/accueil.webp"
+      alt="Fleurs devant la boutique Mimie Brindille"
+      class="w-full h-full object-cover"
+      loading="eager"
+      fetchpriority="high"
+    />
+  </picture>
+
+
+  <!-- Overlay noir semi-transparent -->
+  <div class="absolute inset-0 bg-black/50 z-5"></div>
+
+  <!-- Contenu centré -->
+  <div
+    class="relative z-20 container mx-auto h-full flex flex-col justify-center items-center text-center px-4"
+  >
+    <!-- Titre principal -->
+    <h1
+      class="helium text-4xl sm:text-5xl md:text-6xl text-white leading-snug"
+      style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
     >
-      <!-- Overlay noir semi-transparent pour lisibilité -->
-      <div class="absolute inset-0 bg-black/50"></div>
-      <!-- Contenu centré verticalement et horizontalement -->
-      <div
-        class="relative z-10 container mx-auto h-full flex flex-col justify-center items-center text-center px-4"
-      >
-        <!-- Titre principal -->
-        <h1
-          class="helium text-4xl sm:text-5xl md:text-6xl text-white leading-snug"
-          style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)"
-        >
-          Bienvenue chez Mimie Brindille
-        </h1>
-        <!--Sous-titre -->
-        <p
-          class="louis mt-4 text-lg sm:text-xl md:text-2xl text-white max-w-md mx-auto"
-          style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)"
-        >
-          Votre fleuriste à Pont-à-Celles.
-        </p>
-        <!-- Bouton d’appel à l’action vers le catalogue -->
-        <NuxtLink
-          to="/catalogue"
-          class="mt-8 inline-block bg-[#CB8587] hover:bg-[#b06b6d] text-white font-medium text-lg px-6 py-3 rounded-lg shadow-lg transition"
-        >
-          Entrez dans mon univers floral
-        </NuxtLink>
-      </div>
-    </div>
-  </section>
+      Bienvenue chez Mimie Brindille
+    </h1>
+    <!-- Sous-titre -->
+    <p
+      class="louis mt-4 text-lg sm:text-xl md:text-2xl text-white max-w-md mx-auto"
+      style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 1)"
+    >
+      Votre fleuriste à Pont-à-Celles.
+    </p>
+    <!-- Bouton CTA -->
+    <NuxtLink
+      to="/catalogue"
+      class="mt-8 inline-block bg-[#CB8587] hover:bg-[#b06b6d] text-white font-medium text-lg px-6 py-3 rounded-lg shadow-lg transition"
+    >
+      Entrez dans mon univers floral
+    </NuxtLink>
+  </div>
+</section>
 
   <!-- PRÉSENTATION -->
   <section class="py-12 px-4 sm:px-6">
@@ -602,6 +616,7 @@ const reviews = ref([
     avatar: "/images/avatars/3.webp",
     text: "Très chouette fleuriste. Des fleurs et plantes toujours très fraîches, un choix qui varie de jour en jour, et également de jolies décorations. Le tout à des prix très abordables. Une fleuriste vraiment à l’écoute du client, qui vous reçoit toujours avec le sourire. Alors allez lui rendre visite, je vous la conseille vivement !",
   },
+  
 ]);
 </script>
 
