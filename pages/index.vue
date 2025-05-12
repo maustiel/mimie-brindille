@@ -1,23 +1,17 @@
 <template>
  <!-- HERO -->
  <section class="relative w-full h-[80vh] sm:h-screen overflow-hidden">
-  <picture class="absolute inset-0 w-full h-full">
-    <!-- Mobile (≤640px) -->
-    <source
-      media="(max-width: 640px)"
-      srcset="/images/accueil-mobile.webp"
-      type="image/webp"
-    />
-    
-    <!-- Desktop -->
-    <img
-      src="/images/accueil.webp"
-      alt="Fleurs devant la boutique Mimie Brindille"
-      class="w-full h-full object-cover"
-      loading="eager"
-      fetchpriority="high"
-    />
-  </picture>
+    <!-- img de fond -->
+    <NuxtImg
+          src="/images/accueil.webp"
+          alt="image de fond de la boutique mimie brindille"
+          class="absolute inset-0 w-full h-full object-cover"
+          width="1920"
+          height="1080"
+          format="webp"
+          quality="70"
+          loading="lazy"
+        />
 
 
   <!-- Overlay noir semi-transparent -->
