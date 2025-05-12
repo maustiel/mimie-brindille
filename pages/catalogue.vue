@@ -127,26 +127,26 @@
 import { useHead } from '#imports'
 
 useHead({
-  title: 'Produits & Services - Mimie Brindille, Fleuriste à Pont-à-Celles',
+  title: "Produits & Services - Mimie Brindille",
   meta: [
     {
-      name: 'description',
-      content: 'Je vous propose des fleurs coupées, des compositions florales, des plantes d’intérieur et des décorations florales, le tout avec un service personnalisé depuis ma boutique à Pont-à-Celles.',
+      name: "description",
+      content: "Je vous propose des fleurs coupées, des compositions florales, des plantes d’intérieur et des décorations florales, le tout avec un service personnalisé depuis ma boutique à Pont-à-Celles.",
     },
-    { property: 'og:title', content: 'Produits & Services - Mimie Brindille' },
+    { property: "og:title", content: "Produits & Services - Mimie Brindille" },
     {
-      property: 'og:description',
-      content: 'Des bouquets sur mesure, des plantes et des décorations florales pour chaque occasion. Visitez la boutique à Pont-à-Celles.',
+      property: "og:description",
+      content: "Des bouquets sur mesure, des plantes et des décorations florales pour chaque occasion. Visitez la boutique à Pont-à-Celles.",
     },
     {
-      property: 'og:image',
-      content: 'https://mimiebrindille.be/images/catalogue/bouquet/bouquet12.webp', // remplace avec l’URL de ton image réelle
+      property: "og:image",
+      content: "https://mimiebrindille.be/images/catalogue/bouquet/bouquet12.webp", // remplace avec l’URL de ton image réelle
     },
-    { property: 'og:url', content: 'https://mimiebrindille.be/catalogue' },
-    { name: 'robots', content: 'index, follow' }
+    { property: "og:url", content: "https://mimiebrindille.be/catalogue" },
+    { name: "robots", content: "index, follow" }
   ],
   link: [
-    { rel: 'canonical', href: 'https://mimiebrindille.be/catalogue' }
+    { rel: "canonical", href: "https://mimiebrindille.be/catalogue" }
   ]
 })
 

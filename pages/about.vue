@@ -176,7 +176,7 @@
 import { useHead } from '#imports'
 
 useHead({
-  title: "À propos - Mimie Brindille, Fleuriste passionnée à Pont-à-Celles",
+  title: "À propos - Mimie Brindille",
   meta: [
     {
       name: "description",

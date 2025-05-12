@@ -306,21 +306,19 @@
 import { useHead } from "#imports";
 
 useHead({
-  title: "Contact - Mimie Brindille, Fleuriste à Pont-à-Celles",
+  title: "Contact - Mimie Brindille",
   meta: [
     {
       name: "description",
-      content:
-        "Besoin d’un bouquet personnalisé ou d’un renseignement ? Contactez-moi facilement par téléphone, mail ou via le formulaire. Je vous réponds avec plaisir depuis ma boutique à Pont-à-Celles.",
+      content:"Besoin d’un bouquet personnalisé ou d’un renseignement ? Contactez-moi facilement par téléphone, mail ou via le formulaire. Je vous réponds avec plaisir depuis ma boutique à Pont-à-Celles.",
     },
     {
       property: "og:title",
-      content: "Contact - Mimie Brindille, Fleuriste à Pont-à-Celles",
+      content: "Contact - Mimie Brindille",
     },
     {
       property: "og:description",
-      content:
-        "Prenez contact avec Mimie Brindille pour toute demande florale, commande personnalisée ou projet événementiel.",
+      content:"Prenez contact avec Mimie Brindille pour toute demande florale, commande personnalisée ou projet événementiel.",
     },
     {
       property: "og:image",

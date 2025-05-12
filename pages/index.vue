@@ -497,8 +497,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content:
-        "Je vous accueille dans mon univers floral à Pont-à-Celles, où chaque bouquet raconte une histoire.",
+      content:"Bouquets sur mesure, fleurs fraîches et compositions artisanales à Pont-à-Celles. Un service personnalisé, tout en douceur.",
     },
     {
       property: "og:title",
