@@ -76,7 +76,7 @@
           <h3 class="text-lg font-semibold">Horaires</h3>
           <ul class="mt-4 space-y-2">
             <li class="text-sm">Lun-Ven: 9h00 - 18h00</li>
-            <li class="text-sm">Mercredi: Fermé</li>
+            <li class="text-sm">Mardi & Mercredi: Fermé</li>
             <li class="text-sm">Samedi: 9h00 - 17h00</li>
             <li class="text-sm">Dimanche: 9h00 - 12h30</li>
           </ul>

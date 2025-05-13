@@ -103,7 +103,7 @@
               <h2 class="text-xl font-semibold mb-2">Horaires</h2>
               <ul class="self-stretch list-disc pl-5 space-y-1 text-left">
                 <li>Lun-Ven : 9h00 – 18h00</li>
-                <li>Mercredi : Fermé</li>
+                <li>Mardi & Mercredi : Fermé</li>
                 <li>Samedi : 9h00 – 17h00</li>
                 <li>Dimanche : 9h00 – 12h30</li>
               </ul>
@@ -241,8 +241,8 @@
             </h3>
             <ul class="louis list-disc pl-5 space-y-2">
               <li>
-                En train, gare de Pont-à-Celles à
-                <strong>10 minutes en voiture</strong>.
+                En train, gare de Gare de Luttre à
+                <strong>10 minutes en bus</strong>.
               </li>
               <li>
                 En bus, lignes <strong>50, 64, 65</strong> arrêt Liberchies
@@ -310,7 +310,8 @@ useHead({
   meta: [
     {
       name: "description",
-      content:"Besoin d’un bouquet personnalisé ou d’un renseignement ? Contactez-moi facilement par téléphone, mail ou via le formulaire. Je vous réponds avec plaisir depuis ma boutique à Pont-à-Celles.",
+      content:
+        "Besoin d’un bouquet personnalisé ou d’un renseignement ? Contactez-moi facilement par téléphone, mail ou via le formulaire. Je vous réponds avec plaisir depuis ma boutique à Pont-à-Celles.",
     },
     {
       property: "og:title",
@@ -318,7 +319,8 @@ useHead({
     },
     {
       property: "og:description",
-      content:"Prenez contact avec Mimie Brindille pour toute demande florale, commande personnalisée ou projet événementiel.",
+      content:
+        "Prenez contact avec Mimie Brindille pour toute demande florale, commande personnalisée ou projet événementiel.",
     },
     {
       property: "og:image",
