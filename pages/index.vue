@@ -505,7 +505,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content:"Bouquets sur mesure, fleurs fraîches et compositions artisanales à Pont-à-Celles. Un service personnalisé, tout en douceur.",
+      content:"Mimie Brindille, fleuriste à Pont-à-Celles, crée des bouquets sur mesure et des compositions florales artisanales avec des fleurs fraîches de saison. Un service doux et personnalisé, pour chaque occasion.",
     },
     {
       property: "og:title",
