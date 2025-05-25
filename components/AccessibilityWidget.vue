@@ -4,7 +4,7 @@
     <!-- Bascule de l’état ouvert/fermé du panneau -->
     <button
       @click="open = !open"
-      class="fixed bottom-4 left-4 w-12 h-12 rounded-full bg-[#381D1C] flex items-center justify-center shadow-lg z-10"
+      class="fixed bottom-4 left-4 w-12 h-12 rounded-full bg-[#381D1C] flex items-center justify-center shadow-lg z-50"
       :aria-expanded="open"
       aria-label="Options d’accessibilité"
     >
