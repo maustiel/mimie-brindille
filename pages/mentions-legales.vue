@@ -24,7 +24,7 @@
     <section class="mb-8">
       <h2 class="text-xl font-semibold">3. Protection des données personnelles</h2>
       <p class="mt-2">
-        Conformément à la législation en vigueur, vous disposez d'un droit d'accès, de rectification, d'opposition et de suppression des données vous concernant. Pour exercer vos droits, vous pouvez nous contacter à l'adresse suivante : <a href="mailto:maurine.meeus@ifosup.wavre.be" class="text-blue-500">maurine.meeus@ifosup.wavre.be</a>.
+        Conformément à la législation en vigueur, vous disposez d'un droit d'accès, de rectification, d'opposition et de suppression des données vous concernant. Pour exercer vos droits, vous pouvez nous contacter à l'adresse suivante : <a href="mailto:Mimie.Brindille@hotmail.com" class="text-blue-500">Mimie.Brindille@hotmail.com</a>.
       </p>
       <p class="mt-2">
         Pour plus d'informations, veuillez consulter notre <NuxtLink to="/politique-confidentialite" class="hover:underline">Politique de confidentialité</NuxtLink>.
@@ -62,7 +62,7 @@
     <section class="mb-8">
       <h2 class="text-xl font-semibold">8. Contact</h2>
       <p class="mt-2">
-        Pour toute question relative aux mentions légales, veuillez nous contacter à l'adresse suivante : <a href="mailto:maurine.meeus@ifosup.wavre.be" class="text-blue-500">maurine.meeus@ifosup.wavre.be</a>.
+        Pour toute question relative aux mentions légales, veuillez nous contacter à l'adresse suivante : <a href="mailto:Mimie.Brindille@hotmail.com" class="text-blue-500">Mimie.Brindille@hotmail.com</a>.
       </p>
     </section>
   </div>

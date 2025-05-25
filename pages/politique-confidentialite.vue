@@ -81,7 +81,7 @@
       <p class="mt-2">
         Si vous avez des questions concernant cette politique de confidentialité ou si vous souhaitez exercer vos droits, vous pouvez nous contacter à l'adresse suivante :
       </p>
-      <a href="mailto:maurine.meeus@ifosup.wavre.be" class="text-blue-500">maurine.meeus@ifosup.wavre.be</a>.
+      <a href="mailto:Mimie.Brindille@hotmail.com" class="text-blue-500">Mimie.Brindille@hotmail.com</a>.
     </section>
   </div>
 </template>
